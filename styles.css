@@ -25,7 +25,7 @@ h3 {
 	margin: 20px 0;
 }
 
-h1, h3 {
+h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	text-align: center;
@@ -66,4 +66,64 @@ h1, h3 {
 	color: white;
 	display: block;
 	padding: 40px 0 0 40px;
+}
+
+/*--------------- PORTFOLIO ---------------*/
+
+h2 {
+	font-size: 1.5em;
+	line-height: 6em;
+}
+
+.app_wrapper  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.app {
+	position: relative;
+	width: 450px;
+	margin-bottom: 5%;
+}
+
+.app img {
+	width: 100%;
+	height: auto;
+}
+
+.fas, .fab {
+
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.fas {
+	margin-left: 29%;
+}
+
+.fab {
+	margin-left: 20%;
+}
+
+.app_links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3598db;
+  height: 0;
+  width: 100%;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.app:hover .app_links {
+  opacity: 1;
+  height: 100%;
+}
+
+.app_links h2 {
+	color: white;
 }
