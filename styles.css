@@ -14,7 +14,7 @@ section {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: 0.1em;
   line-height: 1em;
   text-transform: uppercase;
@@ -31,11 +31,21 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+hr {
+	width: 30%;
+	height: 5%;
+	color: black;
+}
+
 /*--------------- WELCOME ---------------*/
 
 #welcome {
 	height: 100vh;
 	width: 100vw;
+	background-image: url(img/uyuni3.jpg);
+	background-size: 100%;
+	background-position: 0 90%;
+	background-attachment: fixed;
 }
 
 /*--------------- ABOUT ---------------*/
@@ -126,4 +136,62 @@ h2 {
 
 .app_links h2 {
 	color: white;
+}
+
+/*--------------- CONNECTED ---------------*/
+
+#connected {
+	height: 45vh;
+	width: 100vw;
+	background-image: url(img/uyuni5.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	/*background-position: 0 90%;*/
+}
+
+#connected h1 {
+	color: white;
+}
+
+
+.connect_wrapper {
+	height: 100px;
+	width: 21vw;
+	margin: 7% auto 0 auto;
+}
+
+.connect {
+	height: 100%;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid white;
+	float: left;
+}
+
+.connect:hover {
+	background-color: white;
+}
+
+.connect:last-child {
+	margin-left: 30%;
+}
+
+
+.connect_icon {
+	font-size: 50px;
+	color: white;
+	display: block;
+	padding: 22px 0 0 10px;
+}
+
+.connect_icon:hover {
+	color: #3598db;
+}
+
+/*--------------- CONTACT ---------------*/
+
+#contact {
+	height: 90vh;
+	width: 100vw;
+	background-color: #3598db;
 }
