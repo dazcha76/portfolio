@@ -5,36 +5,34 @@
 	border: 0;
 	padding: 0;
 	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: #7e7e7e;
 }
 
 section {
-	width: 70%;
+	width: 79%;
 	margin: 0 auto;
 	padding: 2% 0;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.7em;
   letter-spacing: 0.1em;
-  line-height: 1em;
+  line-height: 1.2em;
   text-transform: uppercase;
   margin: 20px 0 50px 0;
 }
 
-h3 {
-	margin: 20px 0;
-}
-
 h1, h2, h3 {
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	text-align: center;
 }
 
-hr {
-	width: 30%;
-	height: 5%;
-	color: black;
+.divider {
+	width: 8em;
+	height: 0.4em;
+	background-color: #3598db;
+	margin: -2em auto 5em auto;
 }
 
 /*--------------- WELCOME ---------------*/
@@ -46,22 +44,83 @@ hr {
 	background-size: 100%;
 	background-position: 0 90%;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
+
+#logo {
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 8px solid white;
+}
+
+.d , .q {
+	font-family: 'Comfortaa', cursive;
+	font-size: 12em;
+	color: white;
+	display: inline-block;
+	font-weight: 900;
+}
+
+.d {
+	margin: 10% 0 0 8%;
+}
+
+.q {
+	margin: -20% 0 0 -10%;
+}
+
 
 /*--------------- ABOUT ---------------*/
 
+#about {
+	padding: 10vh 0 25vh 0;
+}
+
+#about p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	text-align: justify;
+	font-weight: 400;
+}
+
 .me {
 	border-radius: 50%;
+	float: left;
+	margin-right: 4.5vw;
+}
+
+/*--------------- QUOTE ---------------*/
+
+#quote {
+	clear: both;
+	height: 42vh;
+	width: 100vw;
+	background-image: url(img/uyuni4.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/*background-position: 0 90%;*/
 }
 
 /*--------------- SKILLS ---------------*/
 
+#skills {
+	width: 100vw;
+	background-color: #f7f7f7;
+	padding: 10vh 0 2vh 0;
+}
+
 .skills_wrapper {
+	width: 70%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
 }
 
 .skill_circle {
@@ -69,6 +128,11 @@ hr {
 	width: 150px;
 	background-color: #3598db;
 	border-radius: 50%;
+	margin-right: 3vw;
+}
+
+.skill_circle:first-child {
+	margin-left: 3vw;
 }
 
 .icon {
@@ -78,7 +142,17 @@ hr {
 	padding: 40px 0 0 40px;
 }
 
+h3 {
+	font-size: 1.4em;
+	margin: 3vh 0 8vh 0;
+	font-weight: 900;
+}
+
 /*--------------- PORTFOLIO ---------------*/
+
+#portfolio {
+	padding: 10vh 0 5vh 0;
+}
 
 h2 {
 	font-size: 1.5em;
@@ -146,13 +220,16 @@ h2 {
 	background-image: url(img/uyuni5.jpg);
 	background-size: 100%;
 	background-attachment: fixed;
-	/*background-position: 0 90%;*/
+	background-repeat: no-repeat;
 }
 
 #connected h1 {
 	color: white;
 }
 
+#connected .divider {
+	background-color: white;
+}
 
 .connect_wrapper {
 	height: 100px;
@@ -170,6 +247,7 @@ h2 {
 
 .connect:hover {
 	background-color: white;
+	color: #3598db;
 }
 
 .connect:last-child {
@@ -184,14 +262,70 @@ h2 {
 	padding: 22px 0 0 10px;
 }
 
-.connect_icon:hover {
+/*.connect_icon:hover {
 	color: #3598db;
-}
+}*/
 
 /*--------------- CONTACT ---------------*/
 
 #contact {
-	height: 90vh;
+	height: 75vh;
 	width: 100vw;
 	background-color: #3598db;
+	padding: 10vh 0 25vh 0;
+}
+
+#contact h1, label {
+	color: white;
+}
+
+#contact .divider {
+	background-color: white;
+}
+
+.contact_wrapper {
+	width: 38vw;
+	margin: 0 auto;
+}
+
+label, input {
+	display: block;
+}
+
+input, textarea {
+	width: 100%;
+	margin: 1% 0 3% 0;
+	padding-left: 2%;
+}
+
+input {
+	height: 5vh;
+}
+
+textarea {
+	height: 25vh;
+	padding-top: 2%;
+}
+
+input[type="submit"] {
+	background-color: #3598db;
+	border: 2px solid white;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	margin-top: 2%;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: #3598db;
+}
+
+/*--------------- MEDIA QUERIES ---------------*/
+
+@media only screen and (max-device-width: 450px) {
+    .#welcome, #quote, #connected  {
+        background-attachment: scroll;
+    }
 }

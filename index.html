@@ -4,8 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="styles.css">
+
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:400,700" rel="stylesheet">
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -13,16 +15,26 @@
     </head>
     <body>
         <section id="welcome">
-            
+            <div id="logo">
+                <p class="d">d</p>
+                <p class="q">q</p>
+            </div>
         </section>
 
         <section id="about">
             <h1>About Me</h1>
+            <div class="divider"></div>
             <img class="me" src="img/danika.jpg">
+            <p>An experienced professional looking to change careers and enter the exciting world of Web Development! Fully bilingual with experience in both US and Latin American markets. Native fluency in Spanish and English as well as knowledge of US and Latin American customs and culture. Superior communication skills, experience translating technical documents and creating and translating training manuals and consumer correspondence. Additional experience editing and proofreading both English and Spanish documents to ensure content and grammatical accuracy. Good problem solving skills, able to quickly evaluate needs and develop creative solutions to often changing business needs. Proficient with Microsoft Office and multiple CRM programs. Easily learns and adapts to new technologies.</p>
+        </section>
+
+        <section id="quote">
+            
         </section>
   
         <section id="skills">
             <h1>Skills</h1>
+            <div class="divider"></div>
             <div class="skills_wrapper">
                 <div class="skill">
                     <div class="skill_circle">
@@ -48,8 +60,6 @@
                     </div>
                     <h3>jQuery</h3>
                 </div>
-            </div>
-            <div class="skills_wrapper">
                 <div class="skill">
                     <div class="skill_circle">
                         <i class="icon devicon-ruby-plain"></i>
@@ -74,8 +84,6 @@
                     </div>
                     <h3>PostgreSQL</h3>
                 </div>
-            </div>
-            <div class="skills_wrapper">
                 <div class="skill">
                     <div class="skill_circle">
                         <i class="icon devicon-react-original"></i>
@@ -106,6 +114,7 @@
 
         <section id="portfolio">
             <h1>Portfolio</h1>
+            <div class="divider"></div>
             <div class="app_wrapper">
                 <div class="app">
                     <img src="img/applications/flexnotes.png">
@@ -155,6 +164,7 @@
 
         <section id="connected">
             <h1>Get Connected</h1>
+            <div class="divider"></div>
             <div class="connect_wrapper">
                 <div class="connect">
                     <i class="connect_icon fab fa-github-square"></i>
@@ -167,6 +177,21 @@
 
         <section id="contact">
             <h1>Contact</h1>
+            <div class="divider"></div>
+            <div class="contact_wrapper">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email address...">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </body>
 </html>
