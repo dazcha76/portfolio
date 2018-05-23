@@ -5,8 +5,9 @@
 	border: 0;
 	padding: 0;
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	color: #7e7e7e;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Comfortaa', cursive;
+	color: #696969;
 }
 
 section {
@@ -19,8 +20,9 @@ h1 {
   font-size: 2.7em;
   letter-spacing: 0.1em;
   line-height: 1.2em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin: 20px 0 50px 0;
+  
 }
 
 h1, h2, h3 {
@@ -73,6 +75,49 @@ h1, h2, h3 {
 	margin: -20% 0 0 -10%;
 }
 
+/*--------------- NAVBAR ---------------*/
+
+nav {
+	background-color: #3598db;
+	height: 4em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar_title {
+	text-transform: none;
+	text-align: left;
+	color: white;
+	float: left;
+	margin:0;
+	padding-left: 0.5em;
+	line-height: 1.5em;
+}
+
+ul {
+	float: right;
+}
+
+li {
+	display: inline-block;
+	padding-right: 2em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: white;
+	line-height: 4.3em;
+}
+
+ul:last-child {
+	padding-right: 0;
+}
+
+ul a {
+	text-decoration: none;
+}
 
 /*--------------- ABOUT ---------------*/
 
@@ -221,6 +266,7 @@ h2 {
 	background-size: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	padding-top: 5%;
 }
 
 #connected h1 {
@@ -232,47 +278,50 @@ h2 {
 }
 
 .connect_wrapper {
-	height: 100px;
-	width: 21vw;
-	margin: 7% auto 0 auto;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto 20px auto;
 }
 
-.connect {
-	height: 100%;
+.connect_circle {
+	height: 100px;
 	width: 100px;
 	border-radius: 50%;
 	border: 1px solid white;
-	float: left;
+	margin-right: 10vw;
+	color: red;
 }
 
-.connect:hover {
+.connect_circle:hover {
 	background-color: white;
 	color: #3598db;
 }
 
-.connect:last-child {
-	margin-left: 30%;
+.connect_circle:first-child {
+	margin-left: 15%;
 }
-
 
 .connect_icon {
 	font-size: 50px;
-	color: white;
+	/*color: white;*/
 	display: block;
-	padding: 22px 0 0 10px;
+	padding: 24px 0 0 9px;
 }
 
-/*.connect_icon:hover {
+.connect_icon:hover {
 	color: #3598db;
-}*/
+}
 
 /*--------------- CONTACT ---------------*/
 
 #contact {
-	height: 75vh;
+	height: 65vh;
 	width: 100vw;
 	background-color: #3598db;
-	padding: 10vh 0 25vh 0;
+	padding: 8vh 0 25vh 0;
 }
 
 #contact h1, label {
@@ -293,7 +342,7 @@ label, input {
 }
 
 input, textarea {
-	width: 100%;
+	width: 98%;
 	margin: 1% 0 3% 0;
 	padding-left: 2%;
 }
