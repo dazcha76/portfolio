@@ -5,19 +5,18 @@
 	border: 0;
 	padding: 0;
 	font-size: 16px;
-	/*font-family: 'Montserrat', sans-serif;*/
 	font-family: 'Comfortaa', cursive;
 	color: #696969;
 }
 
 section {
-	width: 79%;
+	width: 79vw;
 	margin: 0 auto;
 	padding: 2% 0;
 }
 
 h1 {
-  font-size: 2.7em;
+  font-size: 3vw;
   letter-spacing: 0.1em;
   line-height: 1.2em;
   text-transform: lowercase;
@@ -43,20 +42,17 @@ h1, h2, h3 {
 	height: 100vh;
 	width: 100vw;
 	background-image: url(img/uyuni3.jpg);
-	background-size: 100%;
 	background-position: 0 90%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 
 #logo {
-	position: absolute;
-	top: 30%;
-	left: 40%;
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
 	border: 8px solid white;
+	margin: 15% auto;
 }
 
 .d , .q {
@@ -83,7 +79,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	z-index: 1;
 }
 
@@ -97,8 +93,12 @@ nav {
 	line-height: 1.5em;
 }
 
-ul {
+.desktop {
 	float: right;
+}
+
+.mobile {
+	display: none;
 }
 
 li {
@@ -145,10 +145,9 @@ ul a {
 	height: 42vh;
 	width: 100vw;
 	background-image: url(img/uyuni4.jpg);
-	background-size: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	/*background-position: 0 90%;*/
+	background-position: 40% 10%;
 }
 
 /*--------------- SKILLS ---------------*/
@@ -263,7 +262,7 @@ h2 {
 	height: 45vh;
 	width: 100vw;
 	background-image: url(img/uyuni5.jpg);
-	background-size: 100%;
+	background-position: 10% 50%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	padding-top: 5%;
@@ -373,8 +372,99 @@ input[type="submit"]:hover {
 
 /*--------------- MEDIA QUERIES ---------------*/
 
-@media only screen and (max-device-width: 450px) {
-    .#welcome, #quote, #connected  {
-        background-attachment: scroll;
-    }
+@media only screen and (max-device-width: 414px) {
+
+	#welcome, #quote, #connected {
+		background-size: cover;
+	}
+
+	#welcome, #connected {
+		background-position: 60% 0%;
+	}
+
+	#quote {
+		background-position: 90% 0%;
+	}
+
+	h1 {
+  	font-size: 7vw;
+  }
+
+  #logo {
+		position: static;
+		margin: 50% auto 0 auto;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+		float: right;
+		margin-right: 6%;
+	}
+
+	.navbar_title {
+		line-height: 2.6em;
+	}
+
+	.mobile .fas {
+		font-size: 2em;
+		line-height: 2em;
+	}
+
+  .me {
+  	height: 300px;
+  	width: auto;
+  	float: none;
+  	display: block;
+		margin: 0 auto 6vh auto;
+	}
+
+	#about {
+		padding: 10vh 0;
+	}
+
+	.skills_wrapper {
+		width: 155px;
+	}
+
+	.skill_circle:first-child {
+		margin-left: 0;
+	}
+
+	.app {
+		margin-bottom: 30%;
+	}
+
+	.connect_wrapper {
+		width: 100%;
+		margin-top: -5%;
+	}
+
+	.contact_wrapper {
+		width: 80vw;
+	}
+
+	.connect_circle:first-child {
+		margin-left: 8%;
+	}
+}
+
+@media only screen and (max-device-width: 360px) {
+
+  .me {
+  	height: 250px;
+  	width: auto;
+	}
+
+	#logo {
+		height: 250px;
+		width: 250px;
+	}
+
+	.d , .q {
+		font-size: 10em;
+	}
 }
