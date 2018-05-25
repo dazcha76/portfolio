@@ -1,3 +1,4 @@
+
 /*--------------- ALL ---------------*/
 
 * {
@@ -16,7 +17,7 @@ section {
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 2.7em;
   letter-spacing: 0.1em;
   line-height: 1.2em;
   text-transform: lowercase;
@@ -97,10 +98,6 @@ nav {
 	float: right;
 }
 
-.mobile {
-	display: none;
-}
-
 li {
 	display: inline-block;
 	padding-right: 2em;
@@ -117,6 +114,27 @@ ul:last-child {
 
 ul a {
 	text-decoration: none;
+}
+
+.mobile {
+	visibility: hidden;
+}
+
+.mobile_list {
+	display: none;
+	position: fixed;
+	top: 3.9em;
+	right: 0;
+	z-index: 1;
+	background-color: #3598db;
+}
+
+.mobile_list li {
+	display: block;
+	padding: 0;
+	background-color: #3598db;
+	width: 100vw;
+	text-align: center;
 }
 
 /*--------------- ABOUT ---------------*/
@@ -147,7 +165,23 @@ ul a {
 	background-image: url(img/uyuni4.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 40% 10%;
+	background-position: 40% 40%;
+	padding-top: 9%;
+}
+
+#quote p {
+	color: white;
+	text-align: center;
+	font-size: 4vh;
+	line-height: 7vh;
+	font-weight: 600;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.author {
+	font-style: italic;
+	padding-top: 8vh;
 }
 
 /*--------------- SKILLS ---------------*/
@@ -277,7 +311,7 @@ h2 {
 }
 
 .connect_wrapper {
-	width: 70%;
+	min-width: 320px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -290,8 +324,6 @@ h2 {
 	width: 100px;
 	border-radius: 50%;
 	border: 1px solid white;
-	margin-right: 10vw;
-	color: red;
 }
 
 .connect_circle:hover {
@@ -300,12 +332,12 @@ h2 {
 }
 
 .connect_circle:first-child {
-	margin-left: 15%;
+	margin-right: 10vw;
+	margin-left: 0;
 }
 
 .connect_icon {
 	font-size: 50px;
-	/*color: white;*/
 	display: block;
 	padding: 24px 0 0 9px;
 }
@@ -372,8 +404,19 @@ input[type="submit"]:hover {
 
 /*--------------- MEDIA QUERIES ---------------*/
 
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-width: 1010px){
+	.desktop {
+		display: none;
+	}
 
+	.mobile {
+		visibility: visible;
+		float: right;
+		margin: 1% 6% 0 0;
+	}
+}
+
+@media only screen and (max-width: 414px) {
 	#welcome, #quote, #connected {
 		background-size: cover;
 	}
@@ -383,7 +426,12 @@ input[type="submit"]:hover {
 	}
 
 	#quote {
+		height: 60vh;
 		background-position: 90% 0%;
+	}
+
+	.author {
+		padding-top: 3vh;
 	}
 
 	h1 {
@@ -393,16 +441,6 @@ input[type="submit"]:hover {
   #logo {
 		position: static;
 		margin: 50% auto 0 auto;
-	}
-
-	.desktop {
-		display: none;
-	}
-
-	.mobile {
-		display: block;
-		float: right;
-		margin-right: 6%;
 	}
 
 	.navbar_title {
@@ -446,14 +484,9 @@ input[type="submit"]:hover {
 	.contact_wrapper {
 		width: 80vw;
 	}
-
-	.connect_circle:first-child {
-		margin-left: 8%;
-	}
 }
 
-@media only screen and (max-device-width: 360px) {
-
+@media only screen and (max-width: 360px) {
   .me {
   	height: 250px;
   	width: auto;
