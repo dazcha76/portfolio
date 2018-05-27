@@ -7,7 +7,6 @@
 	padding: 0;
 	font-size: 16px;
 	font-family: 'Comfortaa', cursive;
-	color: #696969;
 }
 
 section {
@@ -25,9 +24,10 @@ h1 {
   
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
 	font-weight: 700;
 	text-align: center;
+	color: #696969;
 }
 
 .divider {
@@ -140,15 +140,18 @@ ul a {
 /*--------------- ABOUT ---------------*/
 
 #about {
-	padding: 10vh 0 25vh 0;
+	padding: 10vh 0 15vh 0;
 }
 
 #about p {
 	font-size: 1.2em;
-	line-height: 1.5em;
+	line-height: 2.3em;
 	text-align: justify;
 	font-weight: 400;
-	line-height: 2em;
+}
+
+.second_paragraph {
+	margin-top: 3%;
 }
 
 .me {
@@ -256,8 +259,7 @@ h2 {
 	height: auto;
 }
 
-.fas, .fab {
-
+.portfolio_icon {
 	font-size: 50px;
 	text-align: center;
 	color: white;
@@ -312,12 +314,22 @@ h2 {
 }
 
 .connect_wrapper {
-	max-width: 320px;
+	max-width: 280px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	margin: 0 auto 20px auto;
+	color: white;
+}
+
+.connect_wrapper a:visited {
+	color: white;
+}
+
+.connect_wrapper a:hover {
+	background-color: white;
+	color: #3598db;
+	border-radius: 50%;
 }
 
 .connect_circle {
@@ -327,19 +339,10 @@ h2 {
 	border: 1px solid white;
 }
 
-.connect_circle:hover {
-	background-color: white;
-	color: #3598db;
-}
-
 .connect_icon {
 	font-size: 50px;
 	display: block;
 	padding: 24px 0 0 9px;
-}
-
-.connect_icon:hover {
-	color: #3598db;
 }
 
 /*--------------- CONTACT ---------------*/
@@ -410,6 +413,34 @@ input[type="submit"]:hover {
 		float: right;
 		margin: 1% 6% 0 0;
 	}
+
+	.me {
+		margin-bottom: 10%;
+	}
+
+	.contact_wrapper {
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	#about p {
+		line-height: 1.5em;
+		text-align: center;
+	}
+
+	.navbar_title {
+		font-size: 1.7em;
+	}
+
+	.mobile .fas {
+		font-size: 2.3em;
+		margin-top: 5%;
+	}
+
+	.second_paragraph {
+		margin-top: 10%;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -440,12 +471,12 @@ input[type="submit"]:hover {
 	}
 
 	.navbar_title {
-		line-height: 2.6em;
+		line-height: 2.4em;
 	}
 
 	.mobile .fas {
 		font-size: 2em;
-		line-height: 2em;
+		line-height: 1.5em;
 	}
 
   .me {
@@ -495,5 +526,14 @@ input[type="submit"]:hover {
 
 	.d , .q {
 		font-size: 10em;
+	}
+
+	.navbar_title {
+		font-size: 1.5em;
+		line-height: 2.9em;
+	}
+
+	.mobile .fas {
+		line-height: 1.8em;
 	}
 }
