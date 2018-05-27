@@ -1,0 +1,539 @@
+
+/*--------------- ALL ---------------*/
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Comfortaa', cursive;
+}
+
+section {
+	width: 79vw;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+
+h1 {
+  font-size: 2.7em;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  text-transform: lowercase;
+  margin: 20px 0 50px 0;
+  
+}
+
+h1, h2, h3, p {
+	font-weight: 700;
+	text-align: center;
+	color: #696969;
+}
+
+.divider {
+	width: 8em;
+	height: 0.4em;
+	background-color: #3598db;
+	margin: -2em auto 5em auto;
+}
+
+/*--------------- WELCOME ---------------*/
+
+#welcome {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/uyuni3.jpg);
+	background-position: 0 90%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#logo {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 8px solid white;
+	margin: 15% auto;
+}
+
+.d , .q {
+	font-family: 'Comfortaa', cursive;
+	font-size: 12em;
+	color: white;
+	display: inline-block;
+	font-weight: 900;
+}
+
+.d {
+	margin: 10% 0 0 8%;
+}
+
+.q {
+	margin: -20% 0 0 -10%;
+}
+
+/*--------------- NAVBAR ---------------*/
+
+nav {
+	background-color: #3598db;
+	height: 4em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 1;
+}
+
+.navbar_title {
+	text-transform: none;
+	text-align: left;
+	color: white;
+	float: left;
+	margin:0;
+	padding-left: 0.5em;
+	line-height: 1.5em;
+}
+
+.desktop {
+	float: right;
+}
+
+li {
+	display: inline-block;
+	padding-right: 2em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: white;
+	line-height: 4.3em;
+}
+
+ul:last-child {
+	padding-right: 0;
+}
+
+ul a {
+	text-decoration: none;
+}
+
+.mobile {
+	visibility: hidden;
+}
+
+.mobile_list {
+	display: none;
+	position: fixed;
+	top: 3.9em;
+	right: 0;
+	z-index: 1;
+	background-color: #3598db;
+}
+
+.mobile_list li {
+	display: block;
+	padding: 0;
+	background-color: #3598db;
+	width: 100vw;
+	text-align: center;
+}
+
+/*--------------- ABOUT ---------------*/
+
+#about {
+	padding: 10vh 0 15vh 0;
+}
+
+#about p {
+	font-size: 1.2em;
+	line-height: 2.3em;
+	text-align: justify;
+	font-weight: 400;
+}
+
+.second_paragraph {
+	margin-top: 3%;
+}
+
+.me {
+	border-radius: 50%;
+	float: left;
+	margin-right: 4.5vw;
+}
+
+/*--------------- QUOTE ---------------*/
+
+#quote {
+	clear: both;
+	height: 42vh;
+	width: 100vw;
+	background-image: url(img/uyuni4.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 40% 40%;
+	padding-top: 9%;
+}
+
+#quote p {
+	color: white;
+	text-align: center;
+	font-size: 4vh;
+	line-height: 7vh;
+	font-weight: 600;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.author {
+	font-style: italic;
+	padding-top: 8vh;
+}
+
+/*--------------- SKILLS ---------------*/
+
+#skills {
+	width: 100vw;
+	background-color: #f7f7f7;
+	padding: 10vh 0 2vh 0;
+}
+
+.skills_wrapper {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto 20px auto;
+}
+
+.skill_circle {
+	height: 150px;
+	width: 150px;
+	background-color: #3598db;
+	border-radius: 50%;
+	margin-right: 3vw;
+}
+
+.skill_circle:first-child {
+	margin-left: 3vw;
+}
+
+.icon {
+	font-size: 70px;
+	color: white;
+	display: block;
+	padding: 40px 0 0 40px;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin: 3vh 0 8vh 0;
+	font-weight: 900;
+}
+
+/*--------------- PORTFOLIO ---------------*/
+
+#portfolio {
+	padding: 10vh 0 5vh 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 6em;
+}
+
+.app_wrapper  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.app {
+	position: relative;
+	width: 450px;
+	margin-bottom: 5%;
+}
+
+.app img {
+	width: 100%;
+	height: auto;
+}
+
+.portfolio_icon {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.fas {
+	margin-left: 29%;
+}
+
+.fab {
+	margin-left: 20%;
+}
+
+.app_links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3598db;
+  height: 0;
+  width: 100%;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.app:hover .app_links {
+  opacity: 1;
+  height: 100%;
+}
+
+.app_links h2 {
+	color: white;
+}
+
+/*--------------- CONNECTED ---------------*/
+
+#connected {
+	height: 45vh;
+	width: 100vw;
+	background-image: url(img/uyuni5.jpg);
+	background-position: 10% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 5%;
+}
+
+#connected h1 {
+	color: white;
+}
+
+#connected .divider {
+	background-color: white;
+}
+
+.connect_wrapper {
+	max-width: 280px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto 20px auto;
+	color: white;
+}
+
+.connect_wrapper a:visited {
+	color: white;
+}
+
+.connect_wrapper a:hover {
+	background-color: white;
+	color: #3598db;
+	border-radius: 50%;
+}
+
+.connect_circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+.connect_icon {
+	font-size: 50px;
+	display: block;
+	padding: 24px 0 0 9px;
+}
+
+/*--------------- CONTACT ---------------*/
+
+#contact {
+	height: 65vh;
+	width: 100vw;
+	background-color: #3598db;
+	padding: 8vh 0 25vh 0;
+}
+
+#contact h1, label {
+	color: white;
+}
+
+#contact .divider {
+	background-color: white;
+}
+
+.contact_wrapper {
+	width: 38vw;
+	margin: 0 auto;
+}
+
+label, input {
+	display: block;
+}
+
+input, textarea {
+	width: 98%;
+	margin: 1% 0 3% 0;
+	padding-left: 2%;
+}
+
+input {
+	height: 5vh;
+}
+
+textarea {
+	height: 25vh;
+	padding-top: 2%;
+}
+
+input[type="submit"] {
+	background-color: #3598db;
+	border: 2px solid white;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	margin-top: 2%;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: #3598db;
+}
+
+/*--------------- MEDIA QUERIES ---------------*/
+
+@media only screen and (max-width: 1010px){
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		visibility: visible;
+		float: right;
+		margin: 1% 6% 0 0;
+	}
+
+	.me {
+		margin-bottom: 10%;
+	}
+
+	.contact_wrapper {
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	#about p {
+		line-height: 1.5em;
+		text-align: center;
+	}
+
+	.navbar_title {
+		font-size: 1.7em;
+	}
+
+	.mobile .fas {
+		font-size: 2.3em;
+		margin-top: 5%;
+	}
+
+	.second_paragraph {
+		margin-top: 10%;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	#welcome, #quote, #connected {
+		background-size: cover;
+	}
+
+	#welcome, #connected {
+		background-position: 60% 0%;
+	}
+
+	#quote {
+		height: 60vh;
+		background-position: 90% 0%;
+	}
+
+	.author {
+		padding-top: 3vh;
+	}
+
+	h1 {
+  	font-size: 7vw;
+  }
+
+  #logo {
+		position: static;
+		margin: 50% auto 0 auto;
+	}
+
+	.navbar_title {
+		line-height: 2.4em;
+	}
+
+	.mobile .fas {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
+
+  .me {
+  	height: 300px;
+  	width: auto;
+  	float: none;
+  	display: block;
+		margin: 0 auto 6vh auto;
+	}
+
+	#about {
+		padding: 10vh 0;
+	}
+
+	.skills_wrapper {
+		width: 155px;
+	}
+
+	.skill_circle:first-child {
+		margin-left: 0;
+	}
+
+	.app {
+		margin-bottom: 30%;
+	}
+
+	.connect_wrapper {
+		width: 100%;
+		margin-top: -5%;
+	}
+
+	.contact_wrapper {
+		width: 80vw;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+  .me {
+  	height: 250px;
+  	width: auto;
+	}
+
+	#logo {
+		height: 250px;
+		width: 250px;
+	}
+
+	.d , .q {
+		font-size: 10em;
+	}
+
+	.navbar_title {
+		font-size: 1.5em;
+		line-height: 2.9em;
+	}
+
+	.mobile .fas {
+		line-height: 1.8em;
+	}
+}
