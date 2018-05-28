@@ -23,7 +23,8 @@
         $mail->Port = 587;                                    
 
         $mail->setFrom('dqswebpage@gmail.com');
-        $mail->addAddress('dazcha@hotmail.com');               
+        $mail->addAddress('dazcha@hotmail.com');
+        $mail->addCC('danika.quinteros@gmail.com');               
         $mail->addReplyTo($_POST['email']);
 
         $mail->isHTML(true);                              

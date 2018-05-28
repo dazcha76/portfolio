@@ -118,6 +118,7 @@ ul a {
 
 .mobile {
 	visibility: hidden;
+	color: white;
 }
 
 .mobile_list {
@@ -322,7 +323,7 @@ h2 {
 	color: white;
 }
 
-.connect_wrapper a:visited {
+.connect_wrapper a:link, .connect_wrapper a:visited {
 	color: white;
 }
 
