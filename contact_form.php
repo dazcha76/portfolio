@@ -29,7 +29,7 @@
 
         $mail->isHTML(true);                              
         $mail->Subject = "Danika's Webpage";
-        $mail->Body    = "From: ".($_POST['name']."\n Email: ".$_POST['email']."\n Message: ".$_POST['message']);
+        $mail->Body    = "From: ".($_POST['name']."<br>"."Email: ".$_POST['email']."<br>"."Message: ".$_POST['message']);
         $mail->AltBody = htmlentities($_POST['message']);
 
         if ($mail->send()) { 
