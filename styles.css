@@ -242,11 +242,15 @@ h2 {
 	line-height: 6em;
 }
 
-.app_wrapper  {
+.desktop_portfolio  {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.mobile_portfolio {
+	display: none;
 }
 
 .app {
@@ -425,11 +429,6 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 550px){
-/*	#welcome, #quote, #connected {
-		background-attachment: scroll;
-		background-size: 300%;
-	}*/
-
 	#about p {
 		line-height: 1.5em;
 		text-align: center;
@@ -446,6 +445,18 @@ input[type="submit"]:hover {
 
 	.second_paragraph {
 		margin-top: 10%;
+	}
+
+	.desktop_portfolio {
+		display: none;
+	}
+
+	.mobile_portfolio {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 79vw;
 	}
 }
 
