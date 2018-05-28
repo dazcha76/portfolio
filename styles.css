@@ -426,7 +426,8 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 550px){
 	#welcome, #quote, #connected {
-		background-size: 100%;
+		background-attachment: scroll;
+		background-size: 300%;
 	}
 
 	#about p {
@@ -449,9 +450,10 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 414px) {
-	/*#welcome, #quote, #connected {
-		background-size: contain;
-	}*/
+	#welcome, #quote, #connected {
+		background-attachment: scroll;
+		background-size: 300%;
+	}
 
 	/*#welcome, #connected {
 		background-position: 60% 0%;
