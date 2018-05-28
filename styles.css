@@ -425,10 +425,10 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 550px){
-	#welcome, #quote, #connected {
+/*	#welcome, #quote, #connected {
 		background-attachment: scroll;
 		background-size: 300%;
-	}
+	}*/
 
 	#about p {
 		line-height: 1.5em;
@@ -452,17 +452,21 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 414px) {
 	#welcome, #quote, #connected {
 		background-attachment: scroll;
-		background-size: 300%;
+		background-size: 220%;
 	}
 
-	/*#welcome, #connected {
-		background-position: 60% 0%;
+	#welcome {
+		background-position: 60% 80%;
 	}
 
 	#quote {
 		height: 60vh;
-		background-position: 90% 0%;
-	}*/
+		background-position: 90% 70%;
+	}
+
+	#connected {
+		background-position: 60% 80%;
+	}
 
 	.author {
 		padding-top: 3vh;
