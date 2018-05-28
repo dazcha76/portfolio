@@ -426,7 +426,7 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 550px){
 	#welcome, #quote, #connected {
-		background-size: contain;
+		background-size: 100%;
 	}
 
 	#about p {
