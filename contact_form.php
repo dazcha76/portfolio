@@ -9,7 +9,11 @@
     require 'PHPMailer/src/PHPMailer.php';
     require 'PHPMailer/src/SMTP.php';
 
-    $mail = new PHPMailer(true);   
+    $mail = new PHPMailer(true);  
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
     try {
 
@@ -25,15 +29,17 @@
         $mail->setFrom('dqswebpage@gmail.com');
         $mail->addAddress('dazcha@hotmail.com');
         $mail->addCC('danika.quinteros@gmail.com');               
-        $mail->addReplyTo($_POST['email']);
+        $mail->addReplyTo($email);
 
         $mail->isHTML(true);                              
         $mail->Subject = "Danika's Webpage";
-        $mail->Body    = "From: ".($_POST['name']."\n Email: ".$_POST['email']."\n Message: ".$_POST['message']);
-        $mail->AltBody = htmlentities($_POST['message']);
+        $mail->Body    = 'Name: '.$name.'</br>'
+                        .'Email: '.$email.'<br>'
+                        .'Message: '.$message;
+        $mail->AltBody = htmlentities($message);
 
         if ($mail->send()) { 
-            header("Location:index.html");          
+            header('Location:index.html');          
         } 
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
