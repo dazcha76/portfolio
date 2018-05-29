@@ -490,7 +490,7 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 507px){
 	.navbar_title {
-		font-size: 2.3em;
+		font-size: 2.2em;
 		line-height: 1.9em;
 	}
 }
@@ -526,6 +526,7 @@ input[type="submit"]:hover {
 	}
 
 	.navbar_title {
+		font-size: 1.9em;
 		line-height: 2.2em;
 	}
 
@@ -534,7 +535,7 @@ input[type="submit"]:hover {
 	}
 
 	.mobile .fas {
-		font-size: 2em;
+		font-size: 1.9em;
 		line-height: 2.3em;
 	}
 
@@ -587,7 +588,7 @@ input[type="submit"]:hover {
 	}
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 365px){
   .me {
   	height: 250px;
   	width: auto;
