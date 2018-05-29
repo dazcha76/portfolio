@@ -412,6 +412,24 @@ input[type="submit"]:hover {
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media only screen and (max-width: 1030px){
+	#welcome, #quote, #connected {
+		background-attachment: scroll;
+		background-size: 200%;
+	}
+
+	#welcome {
+		background-position: 60% 80%;
+	}
+
+	#quote {
+		height: 60vh;
+		background-position: 90% 40%;
+	}
+
+	#connected {
+		background-position: 60% 80%;
+	}
+
 	.desktop {
 		display: none;
 	}
@@ -485,22 +503,13 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 414px) {
-	/*#welcome, #quote, #connected {
+	#welcome, #quote, #connected {
 		background-attachment: scroll;
 		background-size: 220%;
-	}*/
-
-	#welcome {
-		background-position: 60% 80%;
 	}
 
 	#quote {
-		/*height: 60vh;*/
 		background-position: 90% 70%;
-	}
-
-	#connected {
-		background-position: 60% 80%;
 	}
 
 	.author {
@@ -578,7 +587,7 @@ input[type="submit"]:hover {
 	}
 }
 
-@media only screen and (max-width: 365px){
+@media only screen and (max-width: 360px){
   .me {
   	height: 250px;
   	width: auto;
