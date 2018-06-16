@@ -208,15 +208,19 @@
             <h1>Contact</h1>
             <div class="divider"></div>
             <div class="contact_wrapper">
-                <form method="post" action="contact_form.php">
+                <form name="contactForm" method="post" action="contact_form.php" onsubmit="return validateForm()">
+                    
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name...">
+                    <p id="missing_name">Please enter your name.</p>
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Email address...">
+                    <p id="missing_email">Please enter your email address.</p>
 
                     <label for="message">Message</label>
                     <textarea id="message" name="message"></textarea>
+                    <p id="missing_message">Please enter a message.</p>
 
                     <input type="submit" value="Submit">
                 </form>
