@@ -139,6 +139,10 @@ ul a {
 	text-align: center;
 }
 
+.fa-bars:hover {
+	cursor: pointer;
+}
+
 /*--------------- ABOUT ---------------*/
 
 #about {
