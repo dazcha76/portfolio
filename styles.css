@@ -9,12 +9,6 @@
 	font-family: 'Comfortaa', cursive;
 }
 
-section {
-	width: 79vw;
-	margin: 0 auto;
-	padding: 2% 0;
-}
-
 h1 {
   font-size: 2.8em;
   letter-spacing: 0.1em;
@@ -41,12 +35,12 @@ h1, h2, h3, p {
 
 #welcome {
 	height: 100vh;
-	width: 100vw;
 	background-image: url(img/uyuni3.jpg);
 	background-position: 0% 90%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 #logo {
@@ -54,10 +48,14 @@ h1, h2, h3, p {
 	width: 300px;
 	border-radius: 50%;
 	border: 8px solid white;
-	margin: 15% auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -160px;
+	top: 50%;
+	margin-top: -150px;
 }
 
-.d , .q {
+.d, .q {
 	font-family: 'Comfortaa', cursive;
 	font-size: 12em;
 	color: white;
@@ -139,10 +137,16 @@ ul a {
 	text-align: center;
 }
 
+.fa-bars:hover {
+	cursor: pointer;
+}
+
 /*--------------- ABOUT ---------------*/
 
 #about {
-	padding: 10vh 0 15vh 0;
+	width: 80%;
+	margin: 0 auto;
+	padding: 6% 0 10% 0;
 }
 
 #about p {
@@ -155,7 +159,7 @@ ul a {
 .me {
 	border-radius: 50%;
 	float: left;
-	margin-right: 4.5vw;
+	margin-right: 5%;
 }
 
 /*--------------- QUOTE ---------------*/
@@ -163,7 +167,6 @@ ul a {
 #quote {
 	clear: both;
 	height: 42vh;
-	width: 100vw;
 	background-image: url(img/uyuni4.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -190,13 +193,12 @@ ul a {
 /*--------------- SKILLS ---------------*/
 
 #skills {
-	width: 100vw;
 	background-color: #f7f7f7;
 	padding: 10vh 0 2vh 0;
 }
 
 .skills_wrapper {
-	width: 70%;
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -253,7 +255,7 @@ h2 {
 
 .app {
 	position: relative;
-	width: 450px;
+	width: 40%;
 	margin-bottom: 5%;
 }
 
@@ -300,7 +302,6 @@ h2 {
 
 #connected {
 	height: 45vh;
-	width: 100vw;
 	background-image: url(img/uyuni5.jpg);
 	background-position: 10% 50%;
 	background-attachment: fixed;
@@ -353,7 +354,6 @@ h2 {
 
 #contact {
 	height: 65vh;
-	width: 100vw;
 	background-color: #3598db;
 	padding: 8vh 0 25vh 0;
 }
@@ -415,11 +415,6 @@ input[type="submit"]:hover {
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media only screen and (max-width: 1030px){
-	#welcome, #quote, #connected {
-		background-attachment: scroll;
-		background-size: 200%;
-	}
-
 	#welcome {
 		background-position: 60% 80%;
 	}
@@ -458,8 +453,24 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 850px){
+	.me {
+		float: none;
+		display: block;
+		margin: 0 auto 10% auto;
+	}
+
 	.mobile {
 		line-height: 4em;
+	}
+
+
+}
+
+@media only screen and (max-width: 750px){
+	.app {
+		display: block;
+		width: 80%;
+		margin: 0 auto 10% auto;
 	}
 }
 
@@ -483,11 +494,8 @@ input[type="submit"]:hover {
 	}
 
 	.mobile_portfolio {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		width: 79vw;
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -506,11 +514,6 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 414px) {
-	#welcome, #quote, #connected {
-		background-attachment: scroll;
-		background-size: 220%;
-	}
-
 	#quote {
 		background-position: 90% 70%;
 	}
@@ -522,11 +525,6 @@ input[type="submit"]:hover {
 	h1 {
   	font-size: 7vw;
   }
-
-  #logo {
-		position: static;
-		margin: 50% auto 0 auto;
-	}
 
 	.navbar_title {
 		font-size: 1.9em;
@@ -544,26 +542,25 @@ input[type="submit"]:hover {
 
   .me {
   	height: 300px;
-  	width: auto;
-  	float: none;
-  	display: block;
-		margin: 0 auto 6vh auto;
+		margin: 0 auto 20% auto;
 	}
 
 	#about {
-		padding: 10vh 0;
+		padding: 10% 0 15% 0;
 	}
 
-	.skills_wrapper {
-		width: 155px;
+	.skill_circle {
+		height: 120px;
+		width: 120px;
+	}
+
+	.icon {
+		font-size: 60px;
+		padding: 32px 0 0 29px;
 	}
 
 	.skill_circle:first-child {
 		margin-left: 0;
-	}
-
-	.app {
-		margin-bottom: 30%;
 	}
 
 	.connect_wrapper {
@@ -589,21 +586,26 @@ input[type="submit"]:hover {
 	.mobile .fas {
 		line-height: 2.2em;
 	}
+
+	.skills_wrapper {
+		width: 90%;
+	}
 }
 
 @media only screen and (max-width: 365px){
-  .me {
-  	height: 250px;
-  	width: auto;
-	}
-
 	#logo {
 		height: 250px;
 		width: 250px;
+		margin-left: -132px;
+		margin-top: -125px;
 	}
 
 	.d , .q {
 		font-size: 10em;
+	}
+
+  .me {
+  	height: 250px;
 	}
 
 	.navbar_title {
