@@ -15,10 +15,6 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    if(strlen($name) = 0){
-        echo "Your name is required"
-    }
-
     try {
 
         $mail->SMTPDebug = 0;                                 
