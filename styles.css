@@ -9,12 +9,6 @@
 	font-family: 'Comfortaa', cursive;
 }
 
-section {
-	width: 79vw;
-	margin: 0 auto;
-	padding: 2% 0;
-}
-
 h1 {
   font-size: 2.8em;
   letter-spacing: 0.1em;
@@ -47,6 +41,7 @@ h1, h2, h3, p {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 #logo {
@@ -54,7 +49,12 @@ h1, h2, h3, p {
 	width: 300px;
 	border-radius: 50%;
 	border: 8px solid white;
-	margin: 15% auto;
+	/*margin: 15% auto;*/
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	top: 50%;
+	margin-top: -150px;
 }
 
 .d , .q {
@@ -146,7 +146,9 @@ ul a {
 /*--------------- ABOUT ---------------*/
 
 #about {
-	padding: 10vh 0 15vh 0;
+	width: 80%;
+	margin: 0 auto;
+	padding: 6% 0 10% 0;
 }
 
 #about p {
@@ -458,6 +460,14 @@ input[type="submit"]:hover {
 
 	.contact_wrapper {
 		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	.me {
+		float: none;
+		display: block;
+		margin: 0 auto 10% auto;
 	}
 }
 
