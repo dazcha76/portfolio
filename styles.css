@@ -416,6 +416,11 @@ input[type="submit"]:hover {
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media only screen and (max-width: 1030px){
+	#welcome, #quote, #connected {
+		background-attachment: scroll;
+		background-size: 200%;
+	}
+
 	#welcome {
 		background-position: 60% 80%;
 	}
@@ -470,18 +475,6 @@ input[type="submit"]:hover {
 		display: block;
 		width: 80%;
 		margin: 0 auto 10% auto;
-	}
-
-	#welcome {
-		background-size: 300%;
-	}
-
-	#quote {
-		background-size: 300%;
-	}
-
-	#connected {
-		background-size: 300%;
 	}
 }
 
