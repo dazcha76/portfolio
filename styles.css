@@ -301,7 +301,7 @@ h2 {
 /*--------------- CONNECTED ---------------*/
 
 #connected {
-	height: 45vh;
+	height: 50vh;
 	background-image: url(img/uyuni5.jpg);
 	background-position: 10% 50%;
 	background-attachment: fixed;
@@ -319,11 +319,12 @@ h2 {
 }
 
 .connect_wrapper {
+	height: 100px;
 	max-width: 280px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 0 auto 20px auto;
+	margin: 0 auto;
 	color: white;
 }
 
@@ -462,8 +463,6 @@ input[type="submit"]:hover {
 	.mobile {
 		line-height: 4em;
 	}
-
-
 }
 
 @media only screen and (max-width: 750px){
@@ -471,6 +470,18 @@ input[type="submit"]:hover {
 		display: block;
 		width: 80%;
 		margin: 0 auto 10% auto;
+	}
+
+	#welcome {
+		background-size: 300%;
+	}
+
+	#quote {
+		background-size: 300%;
+	}
+
+	#connected {
+		background-size: 300%;
 	}
 }
 
