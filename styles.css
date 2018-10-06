@@ -34,8 +34,7 @@ h1, h2, h3, p {
 /*--------------- WELCOME ---------------*/
 
 #welcome {
-	height: 92vh;
-	margin-top: 8vh;
+	height: 100vh;
 	background-image: url(img/uyuni3.jpg);
 	background-position: 0% 90%;
 	background-attachment: fixed;
@@ -76,8 +75,7 @@ h1, h2, h3, p {
 
 nav {
 	background-color: #3598db;
-	/*height: 4em;*/
-	height: 8vh;
+	height: 4em;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -424,7 +422,8 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 1030px){
 	#welcome, #quote, #connected {
 		background-attachment: scroll;
-		background-size: 200%;
+		/*background-size: 200%;*/
+		background-size: 250% 100%;
 	}
 
 	#welcome {
