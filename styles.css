@@ -50,11 +50,11 @@ h1, h2, h3, p {
 	border: 0px solid white;
 	position: absolute;
 	left: 50%;
-	margin-left: -160px;
+	margin-left: 0px;
 	top: 50%;
-	margin-top: -150px;
+	margin-top: 0px;
 
-	transform: rotate(0deg);
+	transform: rotate(-360deg);
 
 	animation-name: circle;
 	animation-duration: 4s;
@@ -76,7 +76,7 @@ h1, h2, h3, p {
 	margin-left: 35%;
 	animation-name: d;
 	animation-delay: 0.5s;
-	animation-duration: 4s;
+	animation-duration: 3.5s;
 	animation-fill-mode: forwards;
 }
 
@@ -95,7 +95,7 @@ h1, h2, h3, p {
 	margin-left: 0%;
 	animation-name: q;
 	animation-delay: 0.5s;
-	animation-duration: 4s;
+	animation-duration: 3.5s;
 	animation-fill-mode: forwards;
 }
 
@@ -631,6 +631,40 @@ input[type="submit"]:hover {
 
 	.skills_wrapper {
 		width: 90%;
+	}
+
+	#logo {
+		height: 300px;
+		width: 300px;
+		border: 8px solid white;
+		margin-left: -160px;
+		margin-top: -150px;
+
+		transform: rotate(0deg);
+
+		animation-name: none;
+		animation-duration: 0s;
+		animation-fill-mode: none;
+	}
+
+	.d {
+		font-size: 12em;
+		margin-top: 10%;
+		margin-left: 8%;
+		animation-name: none;
+		animation-delay: 0s;
+		animation-duration: 0s;
+		animation-fill-mode: none;
+	}
+
+	.q {
+		font-size: 12em;
+		margin-top: -20%;
+		margin-left: -10%;
+		animation-name: noe;
+		animation-delay: 0s;
+		animation-duration: 0s;
+		animation-fill-mode: none;
 	}
 }
 
