@@ -255,7 +255,7 @@ h2 {
 
 .app {
 	position: relative;
-	width: 40%;
+	width: 35em;
 	margin-bottom: 5%;
 }
 
@@ -265,21 +265,21 @@ h2 {
 }
 
 .portfolio_icon {
-	font-size: 50px;
-	text-align: center;
+	font-size: 300%;
+ 
 	color: white;
 }
 
 .fas {
-	margin-left: 29%;
+	margin-left: 31%;
 }
 
 .fab {
 	margin-left: 20%;
 }
 
-.flexnotes .fab {
-	margin-left: 45%;
+.icon_wrapper a {
+	display: block;
 }
 
 .app_links {
