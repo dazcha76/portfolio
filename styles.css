@@ -34,7 +34,8 @@ h1, h2, h3, p {
 /*--------------- WELCOME ---------------*/
 
 #welcome {
-	height: 100vh;
+	height: 92vh;
+	margin-top: 8vh;
 	background-image: url(img/uyuni3.jpg);
 	background-position: 0% 90%;
 	background-attachment: fixed;
@@ -75,7 +76,8 @@ h1, h2, h3, p {
 
 nav {
 	background-color: #3598db;
-	height: 4em;
+	/*height: 4em;*/
+	height: 8vh;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -255,7 +257,7 @@ h2 {
 
 .app {
 	position: relative;
-	width: 40%;
+	width: 35em;
 	margin-bottom: 5%;
 }
 
@@ -265,21 +267,21 @@ h2 {
 }
 
 .portfolio_icon {
-	font-size: 50px;
-	text-align: center;
+	font-size: 300%;
+ 
 	color: white;
 }
 
 .fas {
-	margin-left: 29%;
+	margin-left: 31%;
 }
 
 .fab {
 	margin-left: 20%;
 }
 
-.flexnotes .fab {
-	margin-left: 45%;
+.icon_wrapper a {
+	display: block;
 }
 
 .app_links {
