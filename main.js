@@ -1,9 +1,25 @@
 $(document).ready(function(){
+  // $(document).scroll(function(){
+  //   $("nav").css("animation-name", "lower_nav")
+  //   $(".circle").removeClass("logo").addClass("logo-move");
+  //   $(".first").removeClass("d").addClass("d-move");
+  //   $(".second").removeClass("q").addClass("q-move");
+  // });
+
+  logo_nav_animation();
+
 	$(".mobile, .mobile_link").click(function (){
 		$(".mobile_list").toggle();
 		$(".mobile i").toggleClass("fa-times");
 	});
 });
+
+function logo_nav_animation(){
+  $("nav").css("animation-name", "lower_nav")
+  // $(".circle").removeClass("logo").addClass("logo-move");
+  // $(".first").removeClass("d").addClass("d-move");
+  // $(".second").removeClass("q").addClass("q-move");
+}
 
 function validateForm(){
 	var name = document.forms["contactForm"]["name"].value;
