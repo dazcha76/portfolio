@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  // $(document).scroll(function(){
-  //   $("nav").css("animation-name", "lower_nav")
-  //   $(".circle").removeClass("logo").addClass("logo-move");
-  //   $(".first").removeClass("d").addClass("d-move");
-  //   $(".second").removeClass("q").addClass("q-move");
-  // });
 
   logo_nav_animation();
 
@@ -12,13 +6,23 @@ $(document).ready(function(){
 		$(".mobile_list").toggle();
 		$(".mobile i").toggleClass("fa-times");
 	});
+
+  $('.skill_circle').on('mouseenter mouseleave', skillsEffects);
+
+  $('li').on('mouseenter mouseleave', navbarEffects);
+
 });
 
 function logo_nav_animation(){
-  $("nav").css("animation-name", "lower_nav")
-  // $(".circle").removeClass("logo").addClass("logo-move");
-  // $(".first").removeClass("d").addClass("d-move");
-  // $(".second").removeClass("q").addClass("q-move");
+  $("nav").css("animation-name", "lower_nav");
+}
+
+function skillsEffects(){
+  $(this).toggleClass('pink');
+}
+
+function navbarEffects(){
+  $(this).toggleClass('pink_text');
 }
 
 function validateForm(){
