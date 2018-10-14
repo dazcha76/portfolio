@@ -64,29 +64,6 @@ h1, h2, h3, p {
     to {height: 300px; width: 300px; border: 8px solid white; margin-left: -160px; margin-top: -150px; transform: rotate(360deg)}
 }
 
-.logo-move {
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	border: 8px solid white;
-	position: absolute;
-	left: 50%;
-	margin-left: -160px;
-	top: 50%;
-	margin-top: -150px;
-	transform: rotate(360deg);
-	animation-name: circle-move;
-	animation-delay: 5s;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	z-index: 2;
-}
-
-@keyframes circle-move {
-	from {border: 8px solid white;}
-  to {border: 8px solid transparent;}  
-}
-
 .d {
 	font-family: 'Comfortaa', cursive;
 	font-size: 0em;
@@ -416,6 +393,7 @@ h2 {
 }
 
 .connect_wrapper a:hover {
+	margin-top: -1px;
 	background-color: white;
 	color: #3598db;
 	border-radius: 50%;
@@ -509,7 +487,7 @@ input[type="submit"]:hover {
 	}
 
 	#quote {
-		height: 60vh;
+		height: 65vh;
 		background-position: 90% 40%;
 		background-size: 250%;
 	}
@@ -604,7 +582,7 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 414px) {
 	#quote {
-		background-position: 90% 70%;
+		background-position: 90% 65%;
 	}
 
 	.author {
@@ -627,57 +605,6 @@ input[type="submit"]:hover {
 	.mobile .fas {
 		font-size: 1.9em;
 		line-height: 2.3em;
-	}
-
-  .me {
-  	height: 300px;
-		margin: 0 auto 20% auto;
-	}
-
-	#about {
-		padding: 10% 0 15% 0;
-	}
-
-	.skill_circle {
-		height: 120px;
-		width: 120px;
-	}
-
-	.icon {
-		font-size: 60px;
-		padding: 32px 0 0 29px;
-	}
-
-/*	.skill_circle:first-child {
-		margin-left: 0;
-	}*/
-
-	.connect_wrapper {
-		width: 100%;
-		margin-top: -5%;
-	}
-
-	.contact_wrapper {
-		width: 80vw;
-	}
-}
-
-@media only screen and (max-width: 398px){
-	.navbar_title {
-		font-size: 1.8em;
-		line-height: 2.3em;
-	}
-
-	.mobile {
-		margin-right: 6%;
-	}
-
-	.mobile .fas {
-		line-height: 2.2em;
-	}
-
-	.skills_wrapper {
-		width: 90%;
 	}
 
 	.logo {
@@ -710,6 +637,53 @@ input[type="submit"]:hover {
 	@keyframes fade_in {
 		from {opacity: 0;}
 	  to {opacity: 1;}  
+	}
+
+  .me {
+  	height: 300px;
+		margin: 0 auto 20% auto;
+	}
+
+	#about {
+		padding: 10% 0 15% 0;
+	}
+
+	.skill_circle {
+		height: 120px;
+		width: 120px;
+	}
+
+	.icon {
+		font-size: 60px;
+		padding: 32px 0 0 29px;
+	}
+
+	.connect_wrapper {
+		width: 100%;
+		margin-top: -5%;
+	}
+
+	.contact_wrapper {
+		width: 80vw;
+	}
+}
+
+@media only screen and (max-width: 398px){
+	.navbar_title {
+		font-size: 1.8em;
+		line-height: 2.3em;
+	}
+
+	.mobile {
+		margin-right: 6%;
+	}
+
+	.mobile .fas {
+		line-height: 2.2em;
+	}
+
+	.skills_wrapper {
+		width: 90%;
 	}
 }
 
