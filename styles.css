@@ -125,46 +125,6 @@ h1, h2, h3, p {
     to {margin-top: -20%; margin-left: -10%; font-size: 12em;}
 }
 
-.d-move {
-	font-family: 'Comfortaa', cursive;
-	font-size: 12em;
-	color: red;
-	display: inline-block;
-	font-weight: 900;
-	top: 50%;
-	left: 50%;
-	animation-name: move-d;
-	animation-delay: 0;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	position: fixed;
-}
-
-@keyframes move-d {
-    from {font-size: 12em; top: 50%; left: 50%;}
-    to {font-size: 2.8em; top: -84%; left: -142%;}
-}
-
-.q-move {
-	font-family: 'Comfortaa', cursive;
-	font-size: 12em;
-	color: red;
-	display: inline-block;
-	font-weight: 900;
-	top: 50%;
-	left: 50%;
-	animation-name: move-q;
-	animation-delay: 0;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	position: fixed;
-}
-
-@keyframes move-q {
-    from {font-size: 12em; top: 50%; left: 50%;}
-    to {font-size: 2.8em; top: -84%; left: -135%;}
-}
-
 /*--------------- NAVBAR ---------------*/
 
 nav {
@@ -251,7 +211,6 @@ ul a {
 
 #about {
 	width: 80%;
-	height: 71vh;
 	margin: 0 auto;
 	padding: 6% 0 10% 0;
 }
@@ -542,21 +501,22 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 1030px){
 	#welcome, #quote, #connected {
 		background-attachment: scroll;
-		/*background-size: 200%;*/
-		background-size: 250% 100%;
 	}
 
 	#welcome {
 		background-position: 60% 80%;
+		background-size: 250% 100%;
 	}
 
 	#quote {
 		height: 60vh;
 		background-position: 90% 40%;
+		background-size: 250%;
 	}
 
 	#connected {
 		background-position: 60% 80%;
+		background-size: 250%;
 	}
 
 	.desktop {
@@ -688,9 +648,9 @@ input[type="submit"]:hover {
 		padding: 32px 0 0 29px;
 	}
 
-	.skill_circle:first-child {
+/*	.skill_circle:first-child {
 		margin-left: 0;
-	}
+	}*/
 
 	.connect_wrapper {
 		width: 100%;
@@ -726,32 +686,30 @@ input[type="submit"]:hover {
 		border: 8px solid white;
 		margin-left: -160px;
 		margin-top: -150px;
-
+		opacity: 0;
 		transform: rotate(0deg);
-
-		animation-name: none;
-		animation-duration: 0s;
-		animation-fill-mode: none;
+		animation-name: fade_in;
 	}
 
 	.d {
 		font-size: 12em;
 		margin-top: 10%;
 		margin-left: 8%;
-		animation-name: none;
-		animation-delay: 0s;
-		animation-duration: 0s;
-		animation-fill-mode: none;
+		opacity: 0;
+		animation-name: fade_in;
 	}
 
 	.q {
 		font-size: 12em;
 		margin-top: -20%;
 		margin-left: -10%;
-		animation-name: noe;
-		animation-delay: 0s;
-		animation-duration: 0s;
-		animation-fill-mode: none;
+		animation-name: fade_in;
+		opacity: 0;
+	}
+
+	@keyframes fade_in {
+		from {opacity: 0;}
+	  to {opacity: 1;}  
 	}
 }
 
