@@ -1,9 +1,29 @@
 $(document).ready(function(){
+
+  logo_nav_animation();
+
 	$(".mobile, .mobile_link").click(function (){
 		$(".mobile_list").toggle();
 		$(".mobile i").toggleClass("fa-times");
 	});
+
+  $('.skill_circle').on('mouseenter mouseleave', skillsEffects);
+
+  $('li').on('mouseenter mouseleave', navbarEffects);
+
 });
+
+function logo_nav_animation(){
+  $("nav").css("animation-name", "lower_nav");
+}
+
+function skillsEffects(){
+  $(this).toggleClass('pink');
+}
+
+function navbarEffects(){
+  $(this).toggleClass('pink_text');
+}
 
 function validateForm(){
 	var name = document.forms["contactForm"]["name"].value;
