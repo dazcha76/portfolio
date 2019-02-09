@@ -322,20 +322,14 @@ h2 {
 
 .portfolio_icon {
 	font-size: 300%;
- 
 	color: white;
 }
 
-.fas {
-	margin-left: 31%;
-}
-
-.fab {
-	margin-left: 20%;
-}
-
-.icon_wrapper a {
-	display: block;
+.icon_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
 }
 
 .app_links {
