@@ -26,9 +26,7 @@
         $mail->SMTPSecure = 'tls';                
         $mail->Port = 587;                                    
 
-        $mail->setFrom(EMAIL_USER);
-        $mail->addAddress(HOTMAIL);
-        $mail->addCC(GMAIL);               
+        $mail->setFrom(EMAIL_USER);              
         $mail->addReplyTo($email);
 
         $mail->isHTML(true);                              
