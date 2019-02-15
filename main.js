@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  logo_nav_animation();
+  // logo_nav_animation();
 
 	$(".mobile, .mobile_link").click(function (){
 		$(".mobile_list").toggle();
@@ -11,11 +11,19 @@ $(document).ready(function(){
 
   $('li').on('mouseenter mouseleave', navbarEffects);
 
+  $('.fa-video').click(showMovie);
+
+  $('#all').click(showAll);
+  $('#javascript').click(showJavaScript);
+  $('#jquery').click(showJQuery);
+  $('#react').click(showReact);
+  $('#ruby').click(showRuby);
+
 });
 
-function logo_nav_animation(){
-  $("nav").css("animation-name", "lower_nav");
-}
+// function logo_nav_animation(){
+//   $("nav").css("animation-name", "lower_nav");
+// }
 
 function skillsEffects(){
   $(this).toggleClass('pink');
@@ -23,6 +31,46 @@ function skillsEffects(){
 
 function navbarEffects(){
   $(this).toggleClass('pink_text');
+}
+
+function showMovie(){
+  $('.video-modal').removeClass('hidden');
+}
+
+function showAll(){
+  $('.javascript').removeClass('hidden');
+  $('.jquery').removeClass('hidden');
+  $('.react').removeClass('hidden');
+  $('.ruby').removeClass('hidden');
+}
+
+function showJavaScript(){
+  showAll();
+  $('.jquery').addClass('hidden');
+  $('.react').addClass('hidden');
+  $('.ruby').addClass('hidden');
+}
+
+function showJQuery(){
+  showAll();
+  $('.javascript').addClass('hidden');
+  $('.react').addClass('hidden');
+  $('.ruby').addClass('hidden');
+
+}
+
+function showReact(){
+  showAll();
+  $('.javascript').addClass('hidden');
+  $('.jquery').addClass('hidden');
+  $('.ruby').addClass('hidden');
+}
+
+function showRuby(){
+  showAll();
+  $('.javascript').addClass('hidden');
+  $('.jquery').addClass('hidden');
+  $('.react').addClass('hidden');
 }
 
 function validateForm(){
