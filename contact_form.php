@@ -1,4 +1,4 @@
-<?php
+<?php 
 
     require_once('email_config.php');
 
@@ -26,9 +26,9 @@
         $mail->SMTPSecure = 'tls';                
         $mail->Port = 587;                                    
 
-        $mail->setFrom('dqswebpage@gmail.com');
-        $mail->addAddress('dazcha@hotmail.com');
-        $mail->addCC('danika.quinteros@gmail.com');               
+        $mail->setFrom(EMAIL_USER);
+        $mail->addAddress(HOTMAIL);
+        $mail->addCC(GMAIL);               
         $mail->addReplyTo($email);
 
         $mail->isHTML(true);                              
@@ -39,7 +39,7 @@
         $mail->AltBody = htmlentities($message);
 
         if ($mail->send()) { 
-            header('Location:index.html');          
+            header('Location:index.html#contact');       
         } 
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;

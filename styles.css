@@ -153,7 +153,8 @@ li {
 	line-height: 4.7em;
 }
 
-.pink_text {
+/*.pink_text */
+li:hover {
 	color: #ff748c;
 }
 
@@ -271,7 +272,8 @@ ul a {
 	margin-left: 3vw;
 }
 
-.pink {
+/*.pink*/
+.skill_circle:hover {
 	background-color: #ff748c;
 	border: 7px solid #f7f7f7;
 	box-shadow: 0 0 0 10px #ff748c;
@@ -321,12 +323,17 @@ button {
 	background-color: #3598db;
   border-radius: 5px;
   cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+	background-color: #ff748c;
 }
 
 .desktop_portfolio  {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
@@ -337,7 +344,7 @@ button {
 .app {
 	position: relative;
 	height: 40vh;
-	width: 45vw;
+	width: 35%;
 	margin-bottom: 5%;
 }
 
@@ -388,11 +395,15 @@ button {
 	display: none;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .video-modal {
 	height: 100vh;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	position: relative;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 2;
@@ -533,6 +544,30 @@ input[type="submit"]:hover {
 	display: none;
 }
 
+#emailConfirm {
+	height: 30vh;
+  width: 40%;
+	position: fixed;
+	top: 25%;
+	left: 29.3%;
+	background-color: white;
+	
+	border: 10px solid #ff748c;
+	border-radius: 6px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#emailConfirm h2 {
+	font-size: 1.5em;
+	line-height: 2em;
+	color: #ff748c;
+}
+
+#emailConfirm h2:first-child {
+	margin-top: 2em;
+}
+
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media only screen and (max-width: 1030px){
@@ -578,6 +613,13 @@ input[type="submit"]:hover {
 	.contact_wrapper {
 		width: 70vw;
 	}
+
+	.app {
+		/*display: block;*/
+		width: 80%;
+		height: 35vh;
+		margin: 0 auto 10% auto;
+	}
 }
 
 @media only screen and (max-width: 850px){
@@ -594,8 +636,9 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 750px){
 	.app {
-		display: block;
-		width: 80%;
+		/*display: block;*/
+		width: 90%;
+		height: 30vh;
 		margin: 0 auto 10% auto;
 	}
 }
@@ -622,6 +665,10 @@ input[type="submit"]:hover {
 	.mobile_portfolio {
 		display: block;
 		margin: 0 auto;
+	}
+
+	.buttonWrapper {
+		display: none;
 	}
 }
 
