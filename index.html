@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="author" content="Danika Quinteros">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="styles.css">
-
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
 
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -54,7 +54,7 @@
         <section id="about">
             <h1>About Me</h1>
             <div class="divider"></div>
-            <img class="me" src="img/danika.jpg">
+            <img class="me" src="images/danika.jpg">
             <p>An experienced professional looking to change careers and enter the exciting world of Web Development! Fully bilingual with experience in both US and Latin American markets. Native fluency in Spanish and English as well as knowledge of US and Latin American customs and culture. Superior communication skills, experience translating technical documents and creating and translating training manuals and consumer correspondence. Additional experience editing and proofreading both English and Spanish documents to ensure content and grammatical accuracy. Good problem solving skills, able to quickly evaluate needs and develop creative solutions to often changing business needs. Proficient with Microsoft Office and multiple CRM programs. Easily learns and adapts to new technologies.</p>
         </section>
 
@@ -144,47 +144,83 @@
         </section>
 
         <section id="portfolio">
+ 
             <h1>Portfolio</h1>
+
+            <div class="video-modal hidden">
+                <i class="fas fa-times"></i>
+                <video id="appVideo" controls>
+                    <source src="videos/busy_mom.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div class="divider"></div>
-            <div class="desktop_portfolio">
-                <div class="app">
-                    <img src="img/applications/flexnotes.png">
-                    <div class="app_links">
-                        <h2>Flexnotes</h2>
-                        <a href="https://flexnotes.net/" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a>
-                        <a href="https://github.com/conmeconte/flexnotes" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="app">
-                    <img src="img/applications/memory_match.png">
-                    <div class="app_links">
-                        <h2>World Cup Memory Match</h2>
-                        <a href="http://danikaquinteros.com/world_cup_memory_match/" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a>
-                        <a href="https://github.com/dazcha76/world_cup_memory_match" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
-                    </div>
-                </div>
+
+            <div class="buttonWrapper">
+                <button id="all">All</button>
+                <button id="javascript">JavaScript</button>
+                <button id="jquery">jQuery</button>
+                <button id="react">React</button>
+                <button id="ruby">Ruby</button>
             </div>
 
             <div class="desktop_portfolio">
-                <div class="app">
-                    <img src="img/applications/number_games.png">
+                <div class="app react">
+                    <img src="images/flexnotes.png">
+                    <div class="app_links">
+                        <h2>Flexnotes</h2>
+                        <div class="icon_container">
+                            <!-- <a href="https://flexnotes.net/" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a> -->
+                            <a href="https://github.com/conmeconte/flexnotes" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
+                            <!-- <i class="portfolio_icon fas fa-video"></i> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="app ruby">
+                    <img src="images/busy_mom.png">
+                    <div class="app_links">
+                        <h2>The Busy Mom</h2>
+                        <div class="icon_container">
+                            <!-- <a href="#" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a> -->
+                            <a href="https://github.com/dazcha76/the-busy-mom" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
+                            <i class="portfolio_icon fas fa-video"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="app jquery">
+                    <img src="images/memory_match.png">
+                    <div class="app_links">
+                        <h2>World Cup Memory Match</h2>
+                        <div class="icon_container">
+                            <a href="http://danikaquinteros.com/world_cup_memory_match/" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a>
+                            <a href="https://github.com/dazcha76/world_cup_memory_match" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
+                            <!-- <i class="portfolio_icon fas fa-video"></i> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="app javascript">
+                    <img src="images/number_games.png">
                     <div class="app_links">
                         <h2>The Number Games</h2>
-                        <a href="http://danikaquinteros.com/the_number_games/" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a>
-                        <a href="https://github.com/dazcha76/the_number_games" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
+                        <div class="icon_container">
+                            <a href="http://danikaquinteros.com/the_number_games/" target="_blank"><i class="portfolio_icon fas fa-globe"></i></a>
+                            <a href="https://github.com/dazcha76/the_number_games" target="_blank"><i class="portfolio_icon fab fa-github"></i></a>
+                            <!-- <i class="portfolio_icon fas fa-video"></i> -->
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="mobile_portfolio">
                 <div class="app">
-                    <a href="https://github.com/conmeconte/flexnotes" target="_blank"><img src="img/applications/flexnotes.png"></a>
+                    <a href="https://github.com/conmeconte/flexnotes" target="_blank"><img src="images/flexnotes.png"></a>
                 </div>
                 <div class="app">
-                    <a href="https://github.com/dazcha76/world_cup_memory_match" target="_blank"><img src="img/applications/memory_match.png"></a>
+                    <a href="https://github.com/dazcha76/world_cup_memory_match" target="_blank"><img src="images/memory_match.png"></a>
                 </div>
                 <div class="app">
-                    <a href="https://github.com/dazcha76/the_number_games" target="_blank"><img src="img/applications/number_games.png"></a>
+                    <a href="https://github.com/dazcha76/the_number_games" target="_blank"><img src="images/number_games.png"></a>
                 </div>
             </div>
         </section>
@@ -204,7 +240,7 @@
             </div>
         </section>
 
-        <!-- <section id="contact">
+        <section id="contact">
             <h1>Contact</h1>
             <div class="divider"></div>
             <div class="contact_wrapper">
@@ -225,6 +261,11 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
-        </section> -->
+
+            <div id="emailConfirm" class="hidden">
+                <h2>Your message has been sent.</h2>
+                <h2>Thank you!</h2>
+            </div>
+        </section>
     </body>
 </html>

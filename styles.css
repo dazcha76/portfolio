@@ -5,6 +5,7 @@
 	margin: 0;
 	border: 0;
 	padding: 0;
+	font-size: 0;
 	font-size: 16px;
 	font-family: 'Comfortaa', cursive;
 }
@@ -35,12 +36,13 @@ h1, h2, h3, p {
 
 #welcome {
 	height: 100vh;
-	background-image: url(img/uyuni3.jpg);
+	width: 100%;
+	background-image: url(images/uyuni3.jpg);
 	background-position: 0% 90%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
+/*	position: relative;*/
 }
 
 .logo {
@@ -50,9 +52,9 @@ h1, h2, h3, p {
 	border: 0px solid white;
 	position: absolute;
 	left: 50%;
-	margin-left: -160px;
+	margin-left: 0px;
 	top: 50%;
-	margin-top: -150px;
+	margin-top: 0px;
 	transform: rotate(0deg);
 	animation-name: circle;
 	animation-duration: 4s;
@@ -61,7 +63,7 @@ h1, h2, h3, p {
 
 @keyframes circle {
     from {height: 0px; width: 0px; border: 0px solid white; margin-left: 0px; margin-top: 0px; transform: rotate(0deg)}
-    to {height: 300px; width: 300px; border: 8px solid white; margin-left: -160px; margin-top: -150px; transform: rotate(360deg)}
+    to {height: 300px; width: 300px; border: 8px solid white; margin-left: -150px; margin-top: -150px; transform: rotate(360deg)}
 }
 
 .d {
@@ -106,47 +108,53 @@ h1, h2, h3, p {
 
 nav {
 	background-color: #3598db;
-	height: 4em;
+	height: 4.5em;
 	position: fixed;
-	top: -4em;
+	/*top: -4em;*/
+	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	z-index: 1;
-	animation-delay: 0s;
+	/*animation-delay: 0s;
 	animation-duration: 4s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards;*/
 }
 
-@keyframes lower_nav {
+/*@keyframes lower_nav {
     from {top: -4em;}
     to {top: 0;}
-}
+}*/
 
 .navbar_title {
-	text-transform: none;
+	/*text-transform: none;*/
 	text-align: left;
 	color: white;
-	float: left;
+	/*float: left;*/
 	margin:0;
 	padding-left: 0.5em;
 	line-height: 1.5em;
+	display: inline-block;
 }
 
 .desktop {
-	float: right;
+	/*float: right;*/
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 li {
 	display: inline-block;
 	padding-right: 2em;
-	color: black;
+	/*color: black;*/
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 900;
 	color: white;
-	line-height: 4.3em;
+	line-height: 4.7em;
 }
 
-.pink_text {
+/*.pink_text */
+li:hover {
 	color: #ff748c;
 }
 
@@ -187,6 +195,7 @@ ul a {
 /*--------------- ABOUT ---------------*/
 
 #about {
+
 	width: 80%;
 	margin: 0 auto;
 	padding: 6% 0 10% 0;
@@ -210,7 +219,7 @@ ul a {
 #quote {
 	clear: both;
 	height: 42vh;
-	background-image: url(img/uyuni4.jpg);
+	background-image: url(images/uyuni4.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 40% 40%;
@@ -263,7 +272,8 @@ ul a {
 	margin-left: 3vw;
 }
 
-.pink {
+/*.pink*/
+.skill_circle:hover {
 	background-color: #ff748c;
 	border: 7px solid #f7f7f7;
 	box-shadow: 0 0 0 10px #ff748c;
@@ -294,14 +304,36 @@ h2 {
 	line-height: 6em;
 }
 
-.last_name {
+.buttonWrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	margin-bottom: 5%;
+}
+
+/*.last_name {
 	padding: 0;
+}*/
+
+button {
+	width: 15%;
+  height: 6vh;
+  color: white;
+	background-color: #3598db;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+	background-color: #ff748c;
 }
 
 .desktop_portfolio  {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
@@ -311,31 +343,30 @@ h2 {
 
 .app {
 	position: relative;
-	width: 35em;
+	height: 40vh;
+	width: 35%;
 	margin-bottom: 5%;
 }
 
 .app img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .portfolio_icon {
 	font-size: 300%;
- 
 	color: white;
 }
 
-.fas {
-	margin-left: 31%;
-}
-
-.fab {
+.connect_icon.fab {
 	margin-left: 20%;
 }
 
-.icon_wrapper a {
-	display: block;
+.icon_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
 }
 
 .app_links {
@@ -358,11 +389,50 @@ h2 {
 	color: white;
 }
 
+/*--------------- VIDEO MODAL ---------------*/
+
+.hidden {
+	display: none;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.video-modal {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+video {
+	height: 70%;
+	width: 70%;
+	margin-top: 10%;
+	margin-left: 15%;
+}
+
+.fa-video, .fa-times {
+	cursor: pointer;
+}
+
+.fa-times {
+	  font-size: 2.5em;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
 /*--------------- CONNECTED ---------------*/
 
 #connected {
 	height: 50vh;
-	background-image: url(img/uyuni5.jpg);
+	background-image: url(images/uyuni5.jpg);
 	background-position: 10% 50%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -474,6 +544,30 @@ input[type="submit"]:hover {
 	display: none;
 }
 
+#emailConfirm {
+	height: 30vh;
+  width: 40%;
+	position: fixed;
+	top: 25%;
+	left: 29.3%;
+	background-color: white;
+	
+	border: 10px solid #ff748c;
+	border-radius: 6px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#emailConfirm h2 {
+	font-size: 1.5em;
+	line-height: 2em;
+	color: #ff748c;
+}
+
+#emailConfirm h2:first-child {
+	margin-top: 2em;
+}
+
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media only screen and (max-width: 1030px){
@@ -519,6 +613,13 @@ input[type="submit"]:hover {
 	.contact_wrapper {
 		width: 70vw;
 	}
+
+	.app {
+		/*display: block;*/
+		width: 80%;
+		height: 35vh;
+		margin: 0 auto 10% auto;
+	}
 }
 
 @media only screen and (max-width: 850px){
@@ -535,8 +636,9 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 750px){
 	.app {
-		display: block;
-		width: 80%;
+		/*display: block;*/
+		width: 90%;
+		height: 30vh;
 		margin: 0 auto 10% auto;
 	}
 }
@@ -563,6 +665,10 @@ input[type="submit"]:hover {
 	.mobile_portfolio {
 		display: block;
 		margin: 0 auto;
+	}
+
+	.buttonWrapper {
+		display: none;
 	}
 }
 

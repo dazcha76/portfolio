@@ -1,28 +1,78 @@
 $(document).ready(function(){
 
-  logo_nav_animation();
-
 	$(".mobile, .mobile_link").click(function (){
 		$(".mobile_list").toggle();
 		$(".mobile i").toggleClass("fa-times");
 	});
 
-  $('.skill_circle').on('mouseenter mouseleave', skillsEffects);
+  $('.fa-video').click(showMovie);
+  $('.fa-times').click(hideMovie);
 
-  $('li').on('mouseenter mouseleave', navbarEffects);
+  $('#all').click(showAll);
+  $('#javascript').click(showJavaScript);
+  $('#jquery').click(showJQuery);
+  $('#react').click(showReact);
+  $('#ruby').click(showRuby);
 
 });
 
-function logo_nav_animation(){
-  $("nav").css("animation-name", "lower_nav");
+function showMovie(){
+  $('.video-modal').removeClass('hidden');
+  $('body').addClass('no-scroll');
+  setTimeout(playMovie, 1500)
 }
 
-function skillsEffects(){
-  $(this).toggleClass('pink');
+function playMovie(){
+  document.getElementById("appVideo").play();
 }
 
-function navbarEffects(){
-  $(this).toggleClass('pink_text');
+function hideMovie(){
+  $('.video-modal').addClass('hidden');
+  $('body').removeClass('no-scroll');
+  document.getElementById("appVideo").load();
+}
+
+function showAll(){
+  $('.javascript').removeClass('hidden');
+  $('.jquery').removeClass('hidden');
+  $('.react').removeClass('hidden');
+  $('.ruby').removeClass('hidden');
+}
+
+function showJavaScript(){
+  showAll();
+  $('.jquery').addClass('hidden');
+  $('.react').addClass('hidden');
+  $('.ruby').addClass('hidden');
+}
+
+function showJQuery(){
+  showAll();
+  $('.javascript').addClass('hidden');
+  $('.react').addClass('hidden');
+  $('.ruby').addClass('hidden');
+}
+
+function showReact(){
+  showAll();
+  $('.javascript').addClass('hidden');
+  $('.jquery').addClass('hidden');
+  $('.ruby').addClass('hidden');
+}
+
+function showRuby(){
+  showAll();
+  $('.javascript').addClass('hidden');
+  $('.jquery').addClass('hidden');
+  $('.react').addClass('hidden');
+}
+
+function showConfirmation(){
+  $('#emailConfirm').removeClass('hidden');
+}
+
+function hideConfirmation(){
+  $('#emailConfirm').addClass('hidden');
 }
 
 function validateForm(){
@@ -63,4 +113,7 @@ function validateForm(){
   } else {
   	return true;
   }
+
+  setTimeout(showConfirmation, 2000);
+  setTimeout(hideConfirmation, 5000);
 }
