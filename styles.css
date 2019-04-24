@@ -333,7 +333,7 @@ button:hover {
 	background-color: #ff748c;
 }
 
-.desktop_portfolio  {
+.portfolio  {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -663,14 +663,14 @@ input[type="submit"]:hover {
 		margin-top: 10%;
 	}
 
-	.desktop_portfolio {
+/*	.desktop_portfolio {
 		display: none;
 	}
 
 	.mobile_portfolio {
 		display: block;
 		margin: 0 auto;
-	}
+	}*/
 
 	.buttonWrapper {
 		display: none;
