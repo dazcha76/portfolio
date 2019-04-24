@@ -10,6 +10,10 @@
 	font-family: 'Comfortaa', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 2.8em;
   letter-spacing: 0.1em;
@@ -336,9 +340,9 @@ button:hover {
 	flex-wrap: wrap;
 }
 
-.mobile_portfolio {
+/*.mobile_portfolio {
 	display: none;
-}
+}*/
 
 .app {
 	position: relative;
@@ -422,9 +426,6 @@ video {
 .fa-times {
 	  font-size: 2.5em;
     color: white;
-    position: absolute;
-    top: 1%;
-    left: 1%;
 }
 
 /*--------------- CONNECTED ---------------*/
@@ -536,8 +537,10 @@ input[type="submit"]:hover {
 	color: #3598db;
 }
 
-#missing_name, #missing_email, #missing_message {
-	color: red;
+#missing_name, 
+#missing_email, 
+#missing_message {
+	color: black;
 	text-align: left;
 	margin: -1.5% 0 2% 0;
 	display: none;
@@ -576,18 +579,21 @@ input[type="submit"]:hover {
 
 	#welcome {
 		background-position: 60% 80%;
-		background-size: 250% 100%;
+		/*background-size: 250% 100%;*/
+		background-size: cover;
 	}
 
 	#quote {
 		height: 65vh;
 		background-position: 90% 40%;
-		background-size: 250%;
+		/*background-size: 250%;*/
+		background-size: cover;
 	}
 
 	#connected {
 		background-position: 60% 80%;
-		background-size: 250%;
+		/*background-size: 250%;*/
+		background-size: cover;
 	}
 
 	.desktop {
@@ -815,5 +821,75 @@ input[type="submit"]:hover {
 
 	.mobile .fas {
 		line-height: 2em;
+	}
+}
+
+
+@media only screen and (max-height: 360px){
+	.me {
+		width: 50%;
+		height: auto;
+	}
+
+	#quote {
+		height: 250px;
+		padding-top: 55px;
+	}
+
+	#quote p {
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	button {
+		width: 120px;
+		height: 35px;
+		line-height: 38px;
+	}
+
+	.app {
+		width: 80%;
+		height: 300px;
+	}
+
+	#connected {
+		height: 330px;
+	}
+
+	#contact {
+		height: 450px;
+	}
+
+	input {
+		height: 35px;
+	}
+
+	li {
+		line-height: 3.75em;
+	}
+
+	#welcome {
+		background-size: cover;
+	}
+
+	.video-modal .fas.fa-times {
+		position: absolute;
+    top: 2%;
+    left: 2%;
+	}
+
+	@keyframes circle {
+    from {height: 0px; width: 0px; border: 0px solid white; margin-left: 0px; margin-top: 0px; transform: rotate(0deg)}
+    to {height: 200px; width: 200px; border: 8px solid white; margin-left: -113px; margin-top: -82px; transform: rotate(360deg)}
+	}
+
+	@keyframes d {
+    from {margin-top: 40%; margin-left: 35%; font-size: 0em;}
+    to {margin-top: 10%; margin-left: 8%; font-size: 8em;}
+	}
+
+	@keyframes q {
+    from {margin-top: 0%; margin-left: 0%; font-size: 0em;}
+    to {margin-top: -20%; margin-left: -10%; font-size: 8em;}
 	}
 }
