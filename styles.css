@@ -385,7 +385,7 @@ button:hover {
 
 .app:hover .app_links {
   opacity: 1;
-  height: 100%;
+  height: 80%;
 }
 
 .app_links h2 {
@@ -798,7 +798,7 @@ input[type="submit"]:hover {
 	}
 }
 
-@media only screen and (max-width: 365px){
+@media only screen and (max-width: 360px){
 	.logo {
 		height: 250px;
 		width: 250px;
@@ -821,6 +821,15 @@ input[type="submit"]:hover {
 
 	.mobile .fas {
 		line-height: 2em;
+	}
+
+	.app:hover .app_links {
+		height: 30vh;
+	}
+
+	.app_links h2 {
+		margin-top: 0;
+		line-height: 4.2em;
 	}
 }
 
@@ -848,8 +857,16 @@ input[type="submit"]:hover {
 	}
 
 	.app {
-		width: 80%;
-		height: 300px;
+		width: 70%;
+		height: 270px;
+	}
+
+	.app:hover .app_links {
+		height: 270px;
+	}
+
+	.app_links h2 {
+		margin-top: 0.5em;
 	}
 
 	#connected {
