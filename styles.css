@@ -872,6 +872,12 @@ input[type="submit"]:hover {
 		background-size: cover;
 	}
 
+	.video-modal .fas.fa-times {
+		position: absolute;
+    top: 2%;
+    left: 2%;
+	}
+
 	@keyframes circle {
     from {height: 0px; width: 0px; border: 0px solid white; margin-left: 0px; margin-top: 0px; transform: rotate(0deg)}
     to {height: 200px; width: 200px; border: 8px solid white; margin-left: -113px; margin-top: -82px; transform: rotate(360deg)}
