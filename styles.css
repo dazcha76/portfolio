@@ -46,7 +46,6 @@ h1, h2, h3, p {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-/*	position: relative;*/
 }
 
 .logo {
@@ -119,21 +118,11 @@ nav {
 	left: 0;
 	width: 100%;
 	z-index: 1;
-	/*animation-delay: 0s;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;*/
 }
 
-/*@keyframes lower_nav {
-    from {top: -4em;}
-    to {top: 0;}
-}*/
-
 .navbar_title {
-	/*text-transform: none;*/
 	text-align: left;
 	color: white;
-	/*float: left;*/
 	margin:0;
 	padding-left: 0.5em;
 	line-height: 1.5em;
@@ -141,7 +130,6 @@ nav {
 }
 
 .desktop {
-	/*float: right;*/
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -150,14 +138,13 @@ nav {
 li {
 	display: inline-block;
 	padding-right: 2em;
-	/*color: black;*/
 	text-transform: uppercase;
 	font-weight: 900;
 	color: white;
 	line-height: 4.7em;
 }
 
-/*.pink_text */
+/* pink_text */
 li:hover {
 	color: #ff748c;
 }
@@ -269,6 +256,7 @@ ul a {
 	background-color: #3598db;
 	border: 7px solid #f7f7f7;
 	box-shadow: 0 0 0 10px #f7f7f7;
+	position: relative;
 }
 
 .skill_circle:first-child {
@@ -285,8 +273,10 @@ ul a {
 .icon {
 	font-size: 70px;
 	color: white;
-	display: block;
-	padding: 40px 0 0 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 h3 {
@@ -315,10 +305,6 @@ h2 {
 	margin-bottom: 5%;
 }
 
-/*.last_name {
-	padding: 0;
-}*/
-
 button {
 	width: 15%;
   height: 6vh;
@@ -339,10 +325,6 @@ button:hover {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-
-/*.mobile_portfolio {
-	display: none;
-}*/
 
 .app {
 	position: relative;
@@ -385,7 +367,7 @@ button:hover {
 
 .app:hover .app_links {
   opacity: 1;
-  height: 80%;
+  height: 100%;
 }
 
 .app_links h2 {
@@ -579,20 +561,17 @@ input[type="submit"]:hover {
 
 	#welcome {
 		background-position: 60% 80%;
-		/*background-size: 250% 100%;*/
 		background-size: cover;
 	}
 
 	#quote {
 		height: 65vh;
 		background-position: 90% 40%;
-		/*background-size: 250%;*/
 		background-size: cover;
 	}
 
 	#connected {
 		background-position: 60% 80%;
-		/*background-size: 250%;*/
 		background-size: cover;
 	}
 
@@ -620,7 +599,6 @@ input[type="submit"]:hover {
 	}
 
 	.app {
-		/*display: block;*/
 		width: 80%;
 		height: 35vh;
 		margin: 0 auto 10% auto;
@@ -641,7 +619,6 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 750px){
 	.app {
-		/*display: block;*/
 		width: 90%;
 		height: 30vh;
 		margin: 0 auto 10% auto;
@@ -661,19 +638,6 @@ input[type="submit"]:hover {
 
 	.second_paragraph {
 		margin-top: 10%;
-	}
-
-/*	.desktop_portfolio {
-		display: none;
-	}
-
-	.mobile_portfolio {
-		display: block;
-		margin: 0 auto;
-	}*/
-
-	.buttonWrapper {
-		display: none;
 	}
 }
 
@@ -766,7 +730,6 @@ input[type="submit"]:hover {
 
 	.icon {
 		font-size: 60px;
-		padding: 32px 0 0 29px;
 	}
 
 	.connect_wrapper {
@@ -777,6 +740,17 @@ input[type="submit"]:hover {
 	.contact_wrapper {
 		width: 80vw;
 	}
+
+	.app_links h2 {
+		margin-top: 0;
+		font-size: 1.4em;
+		line-height: 5.4em;
+	}
+
+	button {
+		width: 75px;
+	}
+
 }
 
 @media only screen and (max-width: 398px){
@@ -833,8 +807,15 @@ input[type="submit"]:hover {
 	}
 }
 
+@media only screen and (max-width: 320px){
+	.skill_circle {
+		height: 100px;
+		width: 100px;
+	}
+}
 
-@media only screen and (max-height: 360px){
+
+@media only screen and (max-height: 450px){
 	.me {
 		width: 50%;
 		height: auto;
@@ -908,5 +889,11 @@ input[type="submit"]:hover {
 	@keyframes q {
     from {margin-top: 0%; margin-left: 0%; font-size: 0em;}
     to {margin-top: -20%; margin-left: -10%; font-size: 8em;}
+	}
+}
+
+@media only screen and (max-height: 450px){
+	li {
+		line-height: 3.2em;
 	}
 }
