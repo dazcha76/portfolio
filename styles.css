@@ -375,6 +375,22 @@ button:hover {
 	color: white;
 }
 
+.coming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3598db;
+  height: 100%;
+  width: 100%;
+  color: white;
+/*  transition: 1s ease;
+  opacity: 0;*/
+}
+
+.coming-soon h2 {
+	color: white;
+}
+
 /*--------------- VIDEO MODAL ---------------*/
 
 .hidden {
