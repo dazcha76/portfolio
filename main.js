@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	$(".mobile, .mobile_link").click(function (){
 		$(".mobile_list").toggle();
 		$(".mobile i").toggleClass("fa-times");
@@ -9,11 +8,11 @@ $(document).ready(function(){
   $('.fa-times').click(hideMovie);
 
   $('#all').click(showAll);
-  $('#javascript').click(showJavaScript);
+  // $('#javascript').click(showJavaScript);
   $('#jquery').click(showJQuery);
   $('#react').click(showReact);
   $('#ruby').click(showRuby);
-
+  $('#wordpress').click(showWordPress);
 });
 
 function showMovie(){
@@ -33,38 +32,50 @@ function hideMovie(){
 }
 
 function showAll(){
-  $('.javascript').removeClass('hidden');
+  // $('.javascript').removeClass('hidden');
   $('.jquery').removeClass('hidden');
   $('.react').removeClass('hidden');
   $('.ruby').removeClass('hidden');
+  $('.wordpress').removeClass('hidden');
 }
 
-function showJavaScript(){
-  showAll();
-  $('.jquery').addClass('hidden');
-  $('.react').addClass('hidden');
-  $('.ruby').addClass('hidden');
-}
+// function showJavaScript(){
+//   showAll();
+//   $('.jquery').addClass('hidden');
+//   $('.react').addClass('hidden');
+//   $('.ruby').addClass('hidden');
+// }
 
 function showJQuery(){
   showAll();
-  $('.javascript').addClass('hidden');
+  // $('.javascript').addClass('hidden');
   $('.react').addClass('hidden');
   $('.ruby').addClass('hidden');
+  $('.wordpress').addClass('hidden');
 }
 
 function showReact(){
   showAll();
-  $('.javascript').addClass('hidden');
+  // $('.javascript').addClass('hidden');
   $('.jquery').addClass('hidden');
   $('.ruby').addClass('hidden');
+  $('.wordpress').addClass('hidden');
 }
 
 function showRuby(){
   showAll();
-  $('.javascript').addClass('hidden');
+  // $('.javascript').addClass('hidden');
   $('.jquery').addClass('hidden');
   $('.react').addClass('hidden');
+  $('.wordpress').addClass('hidden');
+}
+
+function showWordPress(){
+  showAll();
+  // $('.javascript').addClass('hidden');
+  $('.jquery').addClass('hidden');
+  $('.react').addClass('hidden');
+  $('.ruby').addClass('hidden');
 }
 
 function showConfirmation(){
