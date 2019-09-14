@@ -13,6 +13,12 @@ $(document).ready(function(){
   $('#react').click(showReact);
   $('#ruby').click(showRuby);
   $('#wordpress').click(showWordPress);
+
+  appHeight();
+});
+
+$(window).resize(function(){
+  appHeight();
 });
 
 function showMovie(){
@@ -84,6 +90,11 @@ function showConfirmation(){
 
 function hideConfirmation(){
   $('#emailConfirm').addClass('hidden');
+}
+
+function appHeight(){
+  var appHeight = $('.ruby').height();
+  $('.wordpress, .react, .jquery').css('height', appHeight)
 }
 
 function validateForm(){
