@@ -301,19 +301,20 @@ h2 {
 .buttonWrapper {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	margin-bottom: 5%;
 }
 
 button {
-	width: 15%;
+	width: 180px;
   height: 6vh;
   color: white;
 	background-color: #3598db;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
+  margin: 5px;
 }
 
 button:hover {
@@ -328,10 +329,9 @@ button:hover {
 }
 
 .app {
-	position: relative;
-	height: 40vh;
-	width: 35%;
-	margin-bottom: 5%;
+  position: relative;
+  width: 45%;
+  margin: 20px 15px;
 }
 
 .app img {
@@ -389,6 +389,7 @@ button:hover {
 
 .coming-soon h2 {
 	color: white;
+	margin-top: 0;
 }
 
 /*--------------- VIDEO MODAL ---------------*/
@@ -619,8 +620,7 @@ input[type="submit"]:hover {
 
 	.app {
 		width: 80%;
-		height: 35vh;
-		margin: 0 auto 10% auto;
+		margin: 15px auto;
 	}
 }
 
@@ -767,7 +767,7 @@ input[type="submit"]:hover {
 	}
 
 	button {
-		width: 75px;
+		width: 180px;
 	}
 
 	.fa-times {
