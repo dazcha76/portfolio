@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('#ruby').click(showRuby);
   $('#wordpress').click(showWordPress);
 
-  appHeight();
+  // appHeight();
 });
 
 $(window).resize(function(){
