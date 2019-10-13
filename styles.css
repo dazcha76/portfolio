@@ -316,7 +316,7 @@ h3 {
   top: 0;
   left: 0;
 	background-color: #3598db;
-  height: 0%;
+  height: 100%;
   width: 100%;
   transition: .5s ease;
   opacity: 0;
@@ -326,7 +326,6 @@ h3 {
 }
 
 .app:hover .app_links {
-	height: 100%;
   opacity: 1;
 }
 
@@ -438,12 +437,13 @@ video {
 	width: 100px;
 	border-radius: 50%;
 	border: 1px solid white;
+	text-align: center;
 }
 
 .connect_icon {
 	font-size: 50px;
 	display: block;
-	padding: 24px 0 0 9px;
+	padding: 24px 0 0;
 }
 
 /*--------------- CONTACT ---------------*/
