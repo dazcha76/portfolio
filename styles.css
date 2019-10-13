@@ -20,7 +20,6 @@ h1 {
   line-height: 1.2em;
   text-transform: lowercase;
   margin: 20px 0 50px 0;
-  
 }
 
 h1, h2, h3, p {
@@ -65,8 +64,8 @@ h1, h2, h3, p {
 }
 
 @keyframes circle {
-    from {height: 0px; width: 0px; border: 0px solid white; margin-left: 0px; margin-top: 0px; transform: rotate(0deg)}
-    to {height: 300px; width: 300px; border: 8px solid white; margin-left: -150px; margin-top: -150px; transform: rotate(360deg)}
+  from {height: 0px; width: 0px; border: 0px solid white; margin-left: 0px; margin-top: 0px; transform: rotate(0deg)}
+  to {height: 300px; width: 300px; border: 8px solid white; margin-left: -150px; margin-top: -150px; transform: rotate(360deg)}
 }
 
 .d {
@@ -84,8 +83,8 @@ h1, h2, h3, p {
 }
 
 @keyframes d {
-    from {margin-top: 40%; margin-left: 35%; font-size: 0em;}
-    to {margin-top: 10%; margin-left: 8%; font-size: 12em;}
+  from {margin-top: 40%; margin-left: 35%; font-size: 0em;}
+  to {margin-top: 10%; margin-left: 8%; font-size: 12em;}
 }
 
 .q {
@@ -103,8 +102,8 @@ h1, h2, h3, p {
 }
 
 @keyframes q {
-    from {margin-top: 0%; margin-left: 0%; font-size: 0em;}
-    to {margin-top: -20%; margin-left: -10%; font-size: 12em;}
+  from {margin-top: 0%; margin-left: 0%; font-size: 0em;}
+  to {margin-top: -20%; margin-left: -10%; font-size: 12em;}
 }
 
 /*--------------- NAVBAR ---------------*/
@@ -113,7 +112,6 @@ nav {
 	background-color: #3598db;
 	height: 4.5em;
 	position: fixed;
-	/*top: -4em;*/
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -192,7 +190,7 @@ ul a {
 }
 
 #about p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	line-height: 2em;
 	text-align: justify;
 	font-weight: 400;
@@ -202,6 +200,7 @@ ul a {
 	border-radius: 50%;
 	float: left;
 	margin-right: 5%;
+	vertical-align:middle
 }
 
 /*--------------- QUOTE ---------------*/
@@ -292,35 +291,6 @@ h3 {
 	padding: 10vh 0 5vh 0;
 }
 
-h2 {
-	margin-top: 1.4em;
-	font-size: 1.5em;
-	line-height: 6em;
-}
-
-.buttonWrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	margin-bottom: 5%;
-}
-
-button {
-	width: 180px;
-  height: 6vh;
-  color: white;
-	background-color: #3598db;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  margin: 5px;
-}
-
-button:hover {
-	background-color: #ff748c;
-}
-
 .portfolio  {
 	display: flex;
 	flex-direction: row;
@@ -332,63 +302,56 @@ button:hover {
   position: relative;
   width: 45%;
   margin: 20px 15px;
+  border: 3px solid #3598db;
 }
 
-.app img {
-	width: 100%;
-	height: 100%;
-}
-
-.portfolio_icon {
-	font-size: 300%;
-	color: white;
-}
-
-.connect_icon.fab {
-	margin-left: 20%;
-}
-
-.icon_container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .app_links {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #3598db;
-  height: 0;
+	background-color: #3598db;
+  height: 100%;
   width: 100%;
-  transition: 1s ease;
+  transition: .5s ease;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .app:hover .app_links {
   opacity: 1;
-  height: 100%;
 }
 
-.app_links h2 {
+.app-name {
+	font-size: 1.5em;
 	color: white;
 }
 
-/*.coming-soon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #3598db;
-  height: 100%;
-  width: 100%;
+.text {
   color: white;
-}*/
+  font-size: 20px;
+  text-align: center;
+}
 
-/*.coming-soon h2 {
+.icon_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.portfolio_icon {
+	font-size: 300%;
 	color: white;
-	margin-top: 0;
-}*/
+	margin: 0 20px;
+}
 
 /*--------------- VIDEO MODAL ---------------*/
 
@@ -396,7 +359,7 @@ button:hover {
 	display: none;
 }
 
-.no-scroll {
+/*.no-scroll {
 	overflow: hidden;
 }
 
@@ -426,7 +389,7 @@ video {
 .fa-times {
 	  font-size: 2.5em;
     color: white;
-}
+}*/
 
 /*--------------- CONNECTED ---------------*/
 
@@ -474,12 +437,13 @@ video {
 	width: 100px;
 	border-radius: 50%;
 	border: 1px solid white;
+	text-align: center;
 }
 
 .connect_icon {
 	font-size: 50px;
 	display: block;
-	padding: 24px 0 0 9px;
+	padding: 24px 0 0;
 }
 
 /*--------------- CONTACT ---------------*/
@@ -553,10 +517,8 @@ input[type="submit"]:hover {
 	top: 25%;
 	left: 29.3%;
 	background-color: white;
-	
 	border: 10px solid #ff748c;
 	border-radius: 6px;
-
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 

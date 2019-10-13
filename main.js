@@ -4,46 +4,46 @@ $(document).ready(function(){
 		$(".mobile i").toggleClass("fa-times");
 	});
 
-  $('.fa-video').click(showMovie);
-  $('.fa-times').click(hideMovie);
+  // $('.fa-video').click(showMovie);
+  // $('.fa-times').click(hideMovie);
 
-  $('#all').click(showAll);
+  // $('#all').click(showAll);
   // $('#javascript').click(showJavaScript);
-  $('#jquery').click(showJQuery);
-  $('#react').click(showReact);
-  $('#ruby').click(showRuby);
-  $('#wordpress').click(showWordPress);
+  // $('#jquery').click(showJQuery);
+  // $('#react').click(showReact);
+  // $('#ruby').click(showRuby);
+  // $('#wordpress').click(showWordPress);
 
   // appHeight();
 });
 
-$(window).resize(function(){
-  appHeight();
-});
+// $(window).resize(function(){
+//   appHeight();
+// });
 
-function showMovie(){
-  $('.video-modal').removeClass('hidden');
-  $('body').addClass('no-scroll');
-  setTimeout(playMovie, 1500)
-}
+// function showMovie(){
+//   $('.video-modal').removeClass('hidden');
+//   $('body').addClass('no-scroll');
+//   setTimeout(playMovie, 1500)
+// }
 
-function playMovie(){
-  document.getElementById("appVideo").play();
-}
+// function playMovie(){
+//   document.getElementById("appVideo").play();
+// }
 
-function hideMovie(){
-  $('.video-modal').addClass('hidden');
-  $('body').removeClass('no-scroll');
-  document.getElementById("appVideo").load();
-}
+// function hideMovie(){
+//   $('.video-modal').addClass('hidden');
+//   $('body').removeClass('no-scroll');
+//   document.getElementById("appVideo").load();
+// }
 
-function showAll(){
+// function showAll(){
   // $('.javascript').removeClass('hidden');
-  $('.jquery').removeClass('hidden');
-  $('.react').removeClass('hidden');
-  $('.ruby').removeClass('hidden');
-  $('.wordpress').removeClass('hidden');
-}
+//   $('.jquery').removeClass('hidden');
+//   $('.react').removeClass('hidden');
+//   $('.ruby').removeClass('hidden');
+//   $('.wordpress').removeClass('hidden');
+// }
 
 // function showJavaScript(){
 //   showAll();
@@ -52,37 +52,37 @@ function showAll(){
 //   $('.ruby').addClass('hidden');
 // }
 
-function showJQuery(){
-  showAll();
-  // $('.javascript').addClass('hidden');
-  $('.react').addClass('hidden');
-  $('.ruby').addClass('hidden');
-  $('.wordpress').addClass('hidden');
-}
+// function showJQuery(){
+//   showAll();
+//   // $('.javascript').addClass('hidden');
+//   $('.react').addClass('hidden');
+//   $('.ruby').addClass('hidden');
+//   $('.wordpress').addClass('hidden');
+// }
 
-function showReact(){
-  showAll();
-  // $('.javascript').addClass('hidden');
-  $('.jquery').addClass('hidden');
-  $('.ruby').addClass('hidden');
-  $('.wordpress').addClass('hidden');
-}
+// function showReact(){
+//   showAll();
+//   // $('.javascript').addClass('hidden');
+//   $('.jquery').addClass('hidden');
+//   $('.ruby').addClass('hidden');
+//   $('.wordpress').addClass('hidden');
+// }
 
-function showRuby(){
-  showAll();
-  // $('.javascript').addClass('hidden');
-  $('.jquery').addClass('hidden');
-  $('.react').addClass('hidden');
-  $('.wordpress').addClass('hidden');
-}
+// function showRuby(){
+//   showAll();
+//   // $('.javascript').addClass('hidden');
+//   $('.jquery').addClass('hidden');
+//   $('.react').addClass('hidden');
+//   $('.wordpress').addClass('hidden');
+// }
 
-function showWordPress(){
-  showAll();
-  // $('.javascript').addClass('hidden');
-  $('.jquery').addClass('hidden');
-  $('.react').addClass('hidden');
-  $('.ruby').addClass('hidden');
-}
+// function showWordPress(){
+//   showAll();
+//   // $('.javascript').addClass('hidden');
+//   $('.jquery').addClass('hidden');
+//   $('.react').addClass('hidden');
+//   $('.ruby').addClass('hidden');
+// }
 
 function showConfirmation(){
   $('#emailConfirm').removeClass('hidden');
@@ -92,50 +92,100 @@ function hideConfirmation(){
   $('#emailConfirm').addClass('hidden');
 }
 
-function appHeight(){
-  var appHeight = $('.ruby').height();
-  $('.wordpress, .react, .jquery').css('height', appHeight)
-}
+// function appHeight(){
+//   var appHeight = $('.ruby').height();
+//   $('.wordpress, .react, .jquery').css('height', appHeight)
+// }
 
 function validateForm(){
-	var name = document.forms["contactForm"]["name"].value;
-	var email = document.forms["contactForm"]["email"].value;
-	var message = document.forms["contactForm"]["message"].value;
+  var name = $("#name").val().trim();
+  var email = $("#email").val().trim();
+  var message = $("#message").val().trim();
 
-	document.getElementById("missing_name").style.display = "none";
-	document.getElementById("missing_email").style.display = "none";
-	document.getElementById("missing_message").style.display = "none";
+  $("#missing_name").css("display","none");
+  $("#missing_email").css("display","none");
+  $("#missing_message").css("display","none");
 
-	if(name === "" && email === "" && message === ""){
-		document.getElementById("missing_name").style.display = "block";
-		document.getElementById("missing_email").style.display = "block";
-		document.getElementById("missing_message").style.display = "block";
-		return false;
-	} else if(name === "" && email === ""){
-		document.getElementById("missing_name").style.display = "block";
-		document.getElementById("missing_email").style.display = "block";
-		return false;
-	} else if(name === "" && message === ""){
-		document.getElementById("missing_name").style.display = "block";
-		document.getElementById("missing_message").style.display = "block";
-		return false;
-	} else if(email === "" && message === ""){
-		document.getElementById("missing_email").style.display = "block";
-		document.getElementById("missing_message").style.display = "block";
-		return false;
-	} else if (name === "") {
-    document.getElementById("missing_name").style.display = "block";
+  if(name === "" && email === "" && message === ""){
+    $("#missing_name").css('display', 'block');
+    $("#missing_email").css('display', 'block');
+    $("#missing_message").css('display', 'block');
+    return false;
+  } else if(name === "" && email === ""){
+    $("#missing_name").css('display', 'block');
+    $("#missing_email").css('display', 'block');
+    return false;
+  } else if(name === "" && message === ""){
+    $("#missing_name").css('display', 'block');
+    $("#missing_message").css('display', 'block');
+    return false;
+  } else if(email === "" && message === ""){
+    $("#missing_email").css('display', 'block');
+    $("#missing_message").css('display', 'block');
+    return false;
+  } else if (name === "") {
+    $("#missing_name").css('display', 'block');
     return false;
   } else if(email === ""){
-		document.getElementById("missing_email").style.display = "block";
+    $("#missing_email").css('display', 'block');
     return false;
   } else if(message === ""){
-		document.getElementById("missing_message").style.display = "block";
+    $("#missing_message").css('display', 'block');
     return false;
   } else {
-  	return true;
+    return true;
   }
 
   setTimeout(showConfirmation, 2000);
   setTimeout(hideConfirmation, 5000);
+ //  let name = $("#name").val();
+	// let email = $("#email").val();
+	// let message = $("#message").val();
+
+ //  $("#missing_name").css('display', 'none');
+ //  $("#missing_email").css('display', 'none');
+ //  $("#missing_message").css('display', 'none');
+
+ //  if(name === "" && email === "" && message === ""){
+ //    $('#missing_name').text('Please enter your name.').css('display', 'block');
+ //    $("#missing_email").text('Please enter an email address.').css('display', 'block');
+ //    $("#missing_message").text('Please enter a message.').css('display', 'block');
+ //    return false;
+ //  } else if(name === "" && email === ""){
+ //    $('#missing_name').text('Please enter your name.').css('display', 'block');
+ //    $("#missing_email").text('Please enter an email address.').css('display', 'block');
+ //    return false;
+ //  } else if(name === "" && message === ""){
+ //    $('#missing_name').text('Please enter your name.').css('display', 'block');
+ //    $("#missing_message").text('Please enter a message.').css('display', 'block');
+ //    return false;
+ //  } else if(email === "" && message === ""){
+ //    $("#missing_email").text('Please enter an email address.').css('display', 'block');
+ //    $("#missing_message").text('Please enter a message.').css('display', 'block');
+ //    return false;
+ //  } else if(name === ""){
+ //    $('#missing_name').text('Please enter your name.').css('display', 'block');
+ //    return false;
+ //  } else if(name.trim() === ""){
+ //    $('#missing_name').text('Please enter a valid name.').css('display', 'block');
+ //    return false;
+ //  } else if(message === ""){
+ //    $("#missing_message").text('Please enter a message.').css('display', 'block');
+ //    return false;
+ //  } else if (message.trim() === ""){
+ //    $("#missing_message").text('Please enter a valid message.').css('display', 'block');
+ //    return false;
+ //  } else {
+ //    return true;
+ //  }
+
+  // if(email === ""){
+  //   $('#missing_email').text('Please enter an email address.').css('display', 'block');
+  //   return false;
+  // } 
+  // else if(email.trim() === ""){
+  // }
+
+  // setTimeout(showConfirmation, 2000);
+  // setTimeout(hideConfirmation, 5000);
 }
