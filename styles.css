@@ -28,11 +28,34 @@ h1, h2, h3, p {
 	color: #696969;
 }
 
+.hidden {
+	display: none;
+}
+
 .divider {
 	width: 8em;
 	height: 0.4em;
 	background-color: #3598db;
 	margin: -2em auto 5em auto;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.75) no-repeat center center;
+  z-index: 5;
+}
+
+.fa.fa-spinner.fa-pulse.fa-3x.fa-fw {
+	color: #3598db;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
 }
 
 /*--------------- WELCOME ---------------*/
@@ -305,10 +328,30 @@ h3 {
   border: 3px solid #3598db;
 }
 
+/*.rostow {
+	background-image: url("images/rostow.png");
+	background-size: cover;
+}
+
+.retailband {
+	background-image: url("images/retailband.png");
+	background-size: cover;
+}
+
+.flexnotes {
+	background-image: url("images/flexnotes.png");
+	background-size: cover;
+}
+
+.worldcup {
+	background-image: url("images/memory_match.png");
+	background-size: cover;
+}*/
+
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .app_links {
@@ -354,10 +397,6 @@ h3 {
 }
 
 /*--------------- VIDEO MODAL ---------------*/
-
-.hidden {
-	display: none;
-}
 
 /*.no-scroll {
 	overflow: hidden;
@@ -759,6 +798,22 @@ input[type="submit"]:hover {
 
 	.skills_wrapper {
 		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.app_links h2 {
+		margin-top: 0;
+		font-size: 1.2em;
+		line-height: 2em;
+	}
+
+	.text {
+	  font-size: 15px;
+	}
+
+	.portfolio_icon {
+		font-size: 200%;
 	}
 }
 
