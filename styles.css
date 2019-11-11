@@ -321,32 +321,16 @@ h3 {
 	flex-wrap: wrap;
 }
 
+.mobile_portfolio {
+	display: none;
+}
+
 .app {
   position: relative;
   width: 45%;
   margin: 20px 15px;
   border: 3px solid #3598db;
 }
-
-/*.rostow {
-	background-image: url("images/rostow.png");
-	background-size: cover;
-}
-
-.retailband {
-	background-image: url("images/retailband.png");
-	background-size: cover;
-}
-
-.flexnotes {
-	background-image: url("images/flexnotes.png");
-	background-size: cover;
-}
-
-.worldcup {
-	background-image: url("images/memory_match.png");
-	background-size: cover;
-}*/
 
 .image {
   display: block;
@@ -378,9 +362,9 @@ h3 {
 }
 
 .text {
-  color: white;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 .icon_container {
@@ -671,6 +655,51 @@ input[type="submit"]:hover {
 		font-size: 2em;
 		line-height: 2.2em;
 	}
+
+	.portfolio {
+		display: none;
+	}
+
+	.mobile_portfolio {
+		display: block;
+	}
+
+	.app {
+  	position: static;
+	  margin: 20px auto 0;
+	  border: 3px solid #3598db;
+	  border-bottom: none;
+	  width: 350px;
+	}
+
+	.app_links {
+		position: static;
+		background-color: white;
+	  opacity: 1;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+		margin: 0 auto 20px;
+		border: 3px solid #3598db;
+		border-top: none;
+		width: 330px;
+		padding: 10px;
+	}
+
+	.app_links h2  {
+		line-height: 2em;
+		color: #3598db;
+	}
+
+	.app_links .text {
+		padding: 10px 0;
+		color: #3598db;
+	}
+
+	.fa-globe,
+	.fa-github {
+		color: #3598db;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -759,12 +788,6 @@ input[type="submit"]:hover {
 		width: 80vw;
 	}
 
-	.app_links h2 {
-		margin-top: 0;
-		font-size: 1.4em;
-		line-height: 5.4em;
-	}
-
 	button {
 		width: 180px;
 	}
@@ -848,7 +871,6 @@ input[type="submit"]:hover {
 
 	.app_links h2 {
 		margin-top: 0;
-		line-height: 4.2em;
 	}
 }
 
