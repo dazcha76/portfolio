@@ -61,9 +61,12 @@ h1, h2, h3, p {
 .coming-soon {
 	width: 40%;
 	padding: 30px;
-	margin: 0 10px 10px;
-	border-radius: 5px;
+	margin: 20px 15px;
 	background-color: #3598db !important;
+}
+
+.border-radius {
+	border-radius: 5px;
 }
 
 /*--------------- WELCOME ---------------*/
@@ -270,7 +273,7 @@ ul a {
 	padding: 10vh 0 2vh 0;
 }
 
-.skills_wrapper {
+#skills-container {
 	width: 80%;
 	display: flex;
 	flex-direction: row;
@@ -279,7 +282,7 @@ ul a {
 	margin: 0 auto 20px auto;
 }
 
-.skill_circle {
+.skill-circle {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
@@ -290,12 +293,12 @@ ul a {
 	position: relative;
 }
 
-.skill_circle:first-child {
+.skill-circle:first-child {
 	margin-left: 3vw;
 }
 
 /*.pink*/
-.skill_circle:hover {
+.skill-circle:hover {
 	background-color: #ff748c;
 	border: 7px solid #f7f7f7;
 	box-shadow: 0 0 0 10px #ff748c;

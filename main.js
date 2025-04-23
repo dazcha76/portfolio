@@ -44,3 +44,43 @@ function validateForm(){
     return true;
   } 
 }
+
+// ---- Skills ----
+
+const skills = [
+  { name: 'HTML5', icon: 'devicon-html5-plain' },
+  { name: 'CSS3', icon: 'devicon-css3-plain' },
+  { name: 'JavaScript', icon: 'devicon-javascript-plain' },
+  { name: 'Angular', icon: 'devicon-angular-plain' },
+  { name: 'React', icon: 'devicon-react-original' },
+  { name: 'jQuery', icon: 'devicon-jquery-plain' },
+  { name: 'Ruby', icon: 'devicon-ruby-plain' },
+  { name: 'Rails', icon: 'devicon-rails-plain' },
+  { name: 'Git', icon: 'devicon-git-plain' },
+  { name: 'GitHub', icon: 'devicon-github-plain' },
+  { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+  { name: 'MySQL', icon: 'devicon-mysql-plain' },
+];
+
+const skillsContainer = document.getElementById('skills-container');
+
+skills.forEach(skill => {
+    const skillDiv = document.createElement('div');
+    skillDiv.className = 'skill';
+
+    const skillCircle = document.createElement('div');
+    skillCircle.className = 'skill-circle';
+
+    const icon = document.createElement('i');
+    icon.className = `icon ${skill.icon}`;
+
+    skillCircle.appendChild(icon);
+
+    const skillName = document.createElement('h3');
+    skillName.textContent = skill.name;
+
+    skillDiv.appendChild(skillCircle);
+    skillDiv.appendChild(skillName);
+
+    skillsContainer.appendChild(skillDiv);
+});
