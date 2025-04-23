@@ -69,6 +69,10 @@ h1, h2, h3, p {
 	border-radius: 5px;
 }
 
+.blue-text {
+	color: #3598db;
+}
+
 /*--------------- WELCOME ---------------*/
 
 #welcome {
@@ -274,12 +278,15 @@ ul a {
 }
 
 #skills-container {
-	width: 80%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	margin: 0 auto 20px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+}
+
+@media (max-width: 768px) {
+	#skills-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .skill-circle {
@@ -336,10 +343,6 @@ h3 {
 	flex-wrap: wrap;
 }
 
-.mobile_portfolio {
-	display: none;
-}
-
 .app {
   position: relative;
   width: 45%;
@@ -394,40 +397,6 @@ h3 {
 	color: white;
 	margin: 0 20px;
 }
-
-/*--------------- VIDEO MODAL ---------------*/
-
-/*.no-scroll {
-	overflow: hidden;
-}
-
-.video-modal {
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-}
-
-video {
-	height: 70%;
-	width: 70%;
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fa-video, .fa-times {
-	cursor: pointer;
-}
-
-.fa-times {
-	  font-size: 2.5em;
-    color: white;
-}*/
 
 /*--------------- CONNECTED ---------------*/
 
@@ -635,9 +604,6 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 750px){
-	.portfolio {
-		display: none;
-	}
 
 	.mobile_portfolio {
 		display: block;
