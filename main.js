@@ -69,14 +69,15 @@ skills.forEach(skill => {
     skillDiv.className = 'skill';
 
     const skillCircle = document.createElement('div');
-    skillCircle.className = 'skill-circle';
+    skillCircle.className = 'skill-circle circle';
 
     const icon = document.createElement('i');
-    icon.className = `icon ${skill.icon}`;
+    icon.className = `icon white-text ${skill.icon}`;
 
     skillCircle.appendChild(icon);
 
     const skillName = document.createElement('h3');
+    skillName.className = 'centered-text';
     skillName.textContent = skill.name;
 
     skillDiv.appendChild(skillCircle);
