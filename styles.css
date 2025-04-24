@@ -136,6 +136,12 @@ li:hover,
   position: relative;
 }
 
+@media (max-width: 750px){
+	#intro {
+		background-attachment: scroll;
+	}
+}
+
 .logo-container {
   height: 25rem;
   width: 25rem;
@@ -163,10 +169,11 @@ li:hover,
 .about-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
-@media only screen and (max-width: 1130px){
+@media (max-width: 1130px){
   .about-container {
     flex-wrap: wrap;
   }
@@ -187,6 +194,12 @@ li:hover,
   background-size: cover;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 750px){
+	#quote {
+		background-attachment: scroll;
+	}
 }
 
 .quote {
