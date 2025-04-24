@@ -111,48 +111,15 @@ li:hover,
   }
 }
 
-/*--------------- Skills ---------------*/
+/*--------------- Intro ---------------*/
 
-#skills {
-	background-color: #f7f7f7;
-}
-
-#skills-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	justify-items: center;
-}
-
-@media (max-width: 768px) {
-	#skills-container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-.skill-circle {
-	height: 7rem;
-	width: 7rem;
-	background-color: #3598db;
-	position: relative;
-	border: 7px solid #f7f7f7;
-	box-shadow: 0 0 0 10px #f7f7f7;
-}
-
-.skill-circle:hover {
-	background-color: #ff748c;
-	box-shadow: 0 0 0 10px #ff748c;
-}
-
-.icon {
-	font-size: 3rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.devicon-angular-plain {
-	font-size: 4rem;
+#intro {
+	height: 100vh;
+	background-image: url(images/uyuni3.jpg);
+	background-position: 0% 90%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*--------------- Logo Animation ---------------*/
@@ -210,4 +177,48 @@ li:hover,
 @keyframes q {
   from {margin-top: 0%; margin-left: 0%; font-size: 0em;}
   to {margin-top: -20%; margin-left: -10%; font-size: 12em;}
+}
+
+/*--------------- Skills ---------------*/
+
+#skills {
+	background-color: #f7f7f7;
+}
+
+#skills-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+}
+
+@media (max-width: 768px) {
+	#skills-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.skill-circle {
+	height: 7rem;
+	width: 7rem;
+	background-color: #3598db;
+	position: relative;
+	border: 7px solid #f7f7f7;
+	box-shadow: 0 0 0 10px #f7f7f7;
+}
+
+.skill-circle:hover {
+	background-color: #ff748c;
+	box-shadow: 0 0 0 10px #ff748c;
+}
+
+.icon {
+	font-size: 3rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.devicon-angular-plain {
+	font-size: 4rem;
 }

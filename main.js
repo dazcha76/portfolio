@@ -8,7 +8,7 @@ $(document).ready(function(){
 function updateNavbarClass() {
   const targetElement = $('ul');
 
-  if (window.innerWidth < 1167) {
+  if (window.innerWidth < 1168) {
     targetElement.addClass('mobile_list');
   } else {
     targetElement.removeClass('mobile_list');
