@@ -132,7 +132,6 @@ li:hover,
 	background-image: url(images/uyuni3.jpg);
 	background-position: 60% 90%;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-size: cover;
   position: relative;
 }
@@ -183,8 +182,8 @@ li:hover,
 #quote {
   height: 42vh;
   background-image: url(images/uyuni1.jpg);
-  background-attachment: fixed;
   background-position: 40% 40%;
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   align-items: center;
