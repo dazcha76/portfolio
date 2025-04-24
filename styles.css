@@ -179,6 +179,17 @@ li:hover,
   to {margin-top: -20%; margin-left: -10%; font-size: 12em;}
 }
 
+/*--------------- QUOTE ---------------*/
+
+#quote {
+  height: 42vh;
+  background-image: url(images/uyuni4.jpg);
+  background-attachment: fixed;
+  background-position: 40% 40%;
+  padding-top: 9%;
+  background-size: cover;
+}
+
 /*--------------- Skills ---------------*/
 
 #skills {
