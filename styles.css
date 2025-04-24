@@ -31,6 +31,10 @@ body {
 	margin-bottom: 3rem;
 }
 
+.display-flex {
+  display: flex;
+}
+
 .circle {
 	border-radius: 50%;
 }
@@ -48,6 +52,43 @@ section {
 	font-size: 2.5rem;
 	text-align: center;
 	text-transform: lowercase;
+}
+
+/*--------------- NAVBAR ---------------*/
+
+nav {
+	background-color: #3598db;
+	height: 4.5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+  align-items: center;
+  padding: 0 3rem;
+	min-width: 417px;
+}
+
+.danika {
+  font-size: 2.5rem;
+}
+
+ul {
+  /* flex-grow: 1;
+  display: grid;
+	grid-template-columns: repeat(6, 1fr); */
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+	background-color: white;
+  color: #3598db;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*--------------- Skills ---------------*/
