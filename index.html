@@ -35,27 +35,28 @@
       </div>
     </nav>
 
-    <section id="intro">
-      <div class="logo-container">
-        <p class="d white-text">d</p>
-        <p class="q white-text">q</p>
+    <section id="intro" class="">
+      <div class="logo-container centered-text circle">
+        <p class="d letter white-text">d</p>
+        <p class="b letter white-text">q</p>
       </div>
     </section>
 
     <section id="about">
       <h1 class="section-header">About Me</h1>
       <hr class="blue-divider"></hr>
-      <img class="circle" src="images/danika.jpg">
-      <p>Hi! I'm Danika and I'm a Front End Developer. I fell in love with programming back in college, when I started creating websites to share information with friends and family without having to clog their emails.</p>
-      <br>
-      <p>Once I decided I wanted to make a career out of it, I started taking online classes and enrolled in bootcamps. With every new language, framework, and library I learned, I became more impressed with the things I could accomplish.</p>
-      <br>
-      <p>The best thing about becoming a programmer is that things are always changing and I'll never run out of things to learn!</p>
+      <div class="about-container">
+        <img class="circle" src="images/danika.jpg">
+        <div class="about-me">
+          <p>Hi! I'm Danika and I'm a Front End Developer. I fell in love with programming back in college, when I started creating websites to share information with friends and family without having to clog their emails.</p>
+          <p>Once I decided I wanted to make a career out of it, I started taking online classes and enrolled in bootcamps. With every new language, framework, and library I learned, I became more impressed with the things I could accomplish.</p>
+          <p>The best thing about becoming a programmer is that things are always changing and I'll never run out of things to learn!</p>
+        </div>
+      </div>
     </section>
 
     <section id="quote">
-      <!-- <p>"Make the most of yourself by fanning the tiny, inner sparks of possibility into flames of achievement."</p>
-      <p class="author">~ Golda Meir</p> -->
+      <p class="quote white-text centered-text">Where the sky kisses the earth, awakening a sense of wonder that makes you believe anything is possible.</p>
     </section>
   
     <section id="skills">
@@ -67,58 +68,61 @@
     <section id="experience">
       <h1 class="section-header">Experience</h1>
       <hr class="blue-divider"></hr>
-      <h2 class="blue-text">Senior Software Engineer</h2>
-      <p>Verys | 2020-2025</p>
-      <h2 class="blue-text">Senior Software Engineer</h2>
-      <p>Experian | 2021-2025</p>
-      <h2 class="blue-text">Software Engineer</h2>
-      <p>Option Care Health | 2020-2021</p>
+
+      <h2 class="blue-text no-margin">Senior Software Engineer</h2>
+      <p class="no-margin">Verys | Jan. 2020 - Apr. 2025</p>
+      <p class="bottom-margin">Front-End Software Engineer dedicated to high-impact projects for major clients, including Experian and Option Care Health, building responsive interfaces and optimizing performance across web platforms.</p>
+
+      <div class="client">
+        <i class="fas fa-circle blue-text"></i>
+        <div>
+          <h2 class="blue-text no-margin">Senior Software Engineer</h2>
+          <p class="no-margin">Experian | Nov. 2021 - Mar. 2025</p>
+          <p class="bottom-margin">Served as the lead developer for the Credit Cards section of Marketplace, driving key features from concept to launch and ensuring a seamless, high-performing user experience.</p>
+        </div>
+      </div>
+
+      <div class="client">
+        <i class="fas fa-circle blue-text"></i>
+        <div>
+          <h2 class="blue-text no-margin">Software Engineer</h2>
+          <p class="no-margin">Option Care Health | Jan. 2020 - Oct. 2021</p>
+          <p class="bottom-margin">Improved internal systems to simplify contract management and make cash reconciliation more accurate and efficient.</p>
+        </div>
+      </div>
+      
+      <h2 class="blue-text no-margin">Front-End Developer</h2>
+      <p class="no-margin">530medialab | Apr. 2019 - Sep. 2019</p>
+      <p class="bottom-margin">Contributed to the development and troubleshooting of client websites on WordPress and Shopify, ensuring smooth functionality and a great user experience.</p>
+
+      <a href="resume.pdf" class="resume blue-text" target="_blank">
+        View Full Resume
+        <i class="fas fa-external-link-alt blue-text"></i>
+      </a>
     </section>
 
     <section id="projects">
       <h1 class="section-header">Projects</h1>
       <hr class="blue-divider"></hr>
       <div class="">
-        <h1 class="blue-text">Coming Soon!</h1>
+        <h1 class="blue-text centered-text">Coming Soon!</h1>
       </div>
     </section>
 
     <section id="connected">
-      <h1 class="section-header">Get Connected</h1>
+      <h1 class="section-header white-text">Get Connected</h1>
       <hr class="white-divider"></hr>
-      <div class="connect_wrapper">
+      <div class="connect-wrapper">
         <a href="https://github.com/dazcha76" target="_blank">
-          <div class="">
-            <i class="fab fa-github-square"></i>
+          <div class="icon-container connect-circle circle">
+            <i class="icon connect-icon white-text fab fa-github-square"></i>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/danikaquinteros/" target="_">
-          <div class="">
-            <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/danikaquinteros/" target="_blank">
+          <div class="icon-container connect-circle circle">
+            <i class="icon connect-icon fab fa-linkedin"></i>
           </div>
         </a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h1class="section-header">Contact</h1>
-      <hr class="white-divider"></hr>
-      <div class="">
-        <form name="contactForm" method="post" action="contact_form.php" onsubmit="return validateForm()">
-          <label for="name">Name</label>
-          <input class="border-radius" type="text" id="name" name="name" placeholder="Your name...">
-          <p id="missing_name">Please enter your name.</p>
-
-          <label for="email">Email</label>
-          <input class="border-radius"type="email" id="email" name="email" placeholder="Email address...">
-          <p id="missing_email">Please enter your email address.</p>
-
-          <label for="message">Message</label>
-          <textarea class="border-radius" id="message" name="message"></textarea>
-          <p id="missing_message">Please enter a message.</p>
-
-          <input class="border-radius" type="submit" value="Submit">
-        </form>
       </div>
     </section>
     <script src="main.js"></script>
