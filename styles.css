@@ -130,7 +130,7 @@ li:hover,
 #intro {
 	height: 100vh;
 	background-image: url(images/uyuni3.jpg);
-	background-position: 0% 90%;
+	background-position: 60% 90%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -159,9 +159,18 @@ li:hover,
   margin-left: -40px;
 }
 
+/*--------------- About ---------------*/
+
 .about-container {
   display: flex;
+  justify-content: center;
   gap: 40px;
+}
+
+@media only screen and (max-width: 1130px){
+  .about-container {
+    flex-wrap: wrap;
+  }
 }
 
 .about-me {
@@ -220,14 +229,19 @@ li:hover,
 
 /*--------------- Experience ---------------*/
 
+#experience p,
+#experience a {
+  font-size: 1.25rem;
+}
+
 .client {
   display: grid;
   grid-template-columns: 3% auto;
+  gap: 10px;
 }
 
 .resume {
   text-decoration: none;
-  font-size: 20px;
   font-weight: 900;
 }
 
@@ -255,8 +269,7 @@ li:hover,
 #connected {
 	height: 50vh;
 	background-image: url(images/uyuni5.jpg);
-	background-position: 10% 50%;
-	background-attachment: fixed;
+	background-position: 60% 80%;
 	background-size: cover;
   margin-top: 3rem;
 }
