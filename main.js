@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$(".mobile").click(function (){
-		$(".mobile_list").toggle();
+	$(".mobile, .mobile-list").click(function (){
+		$(".mobile-list").toggle();
 		$(".mobile i").toggleClass("fa-times");
 	});
 });
@@ -12,9 +12,6 @@ function updateNavbarClass() {
   } else {
     targetElement.removeClass('mobile-list');
   }
-  // if(!$(targetElement).hasClass('mobile-list') && targetElement.css('display') === 'none') {
-  //   $(targetElement).css('display', '');
-  // }
 }
 
 updateNavbarClass();
@@ -31,10 +28,10 @@ const skills = [
   { name: 'jQuery', icon: 'devicon-jquery-plain' },
   { name: 'Ruby', icon: 'devicon-ruby-plain' },
   { name: 'Rails', icon: 'devicon-rails-plain' },
+  { name: 'Figma', icon: 'devicon-figma-plain' },
   { name: 'Git', icon: 'devicon-git-plain' },
   { name: 'GitHub', icon: 'devicon-github-plain' },
-  { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
-  { name: 'MySQL', icon: 'devicon-mysql-plain' },
+  { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' }
 ];
 
 const skillsContainer = $('#skills-container');

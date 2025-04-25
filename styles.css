@@ -1,6 +1,11 @@
 * {
 	color: #696969;
+  font-size: 16px;;
 	font-family: 'Comfortaa', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -87,13 +92,13 @@ nav {
   font-size: 2.5rem;
 }
 
-li {
+.navigation li {
   display: inline-block;
   padding: 0 1.5rem;
   line-height: 4.5rem;
 }
 
-li:hover,
+.navigation li:hover,
 .mobile-list li:hover {
 	background-color: white;
   color: #3598db;
@@ -117,7 +122,7 @@ li:hover,
     display: block;
   }
 
-  li {
+  .navigation li {
     line-height: 4rem;
     width: 100vw;
     padding: 0 3rem;
@@ -203,7 +208,7 @@ li:hover,
 }
 
 .quote {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 /*--------------- Skills ---------------*/
@@ -241,20 +246,38 @@ li:hover,
 
 /*--------------- Experience ---------------*/
 
-#experience p,
-#experience a {
-  font-size: 1.25rem;
-}
-
 .client {
   display: grid;
   grid-template-columns: 3% auto;
   gap: 10px;
 }
 
+.title {
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 1.25rem;
+}
+
+.technologies {
+  padding: 0;
+}
+
+.technologies li {
+  display: inline-block;
+  background-color: #3598db;
+  padding: 5px 9px;
+}
+
+.technologies li:hover {
+  background-color: #ff748c;
+}
+
 .resume {
   text-decoration: none;
   font-weight: 900;
+  font-size: 1.25rem;
 }
 
 .no-margin {
@@ -276,9 +299,9 @@ li:hover,
   padding-left: 10px;
 }
 
-/*--------------- Connected ---------------*/
+/*--------------- Connect ---------------*/
 
-#connected {
+#connect {
 	height: 50vh;
 	background-image: url(images/uyuni5.jpg);
 	background-position: 60% 80%;
