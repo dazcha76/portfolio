@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 function updateNavbarClass() {
-  const targetElement = $('ul');
+  const targetElement = $('.navigation');
   if (window.innerWidth < 1168) {
     targetElement.addClass('mobile-list');
   } else {

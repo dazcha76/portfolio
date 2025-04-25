@@ -189,26 +189,31 @@ nav {
   line-height: 1.80rem;
 }
 
-/*--------------- Quote ---------------*/
+/*--------------- Inspiration ---------------*/
 
-#quote {
+#inspiration {
   height: 42vh;
   background-image: url(images/uyuni1.jpg);
   background-position: 40% 40%;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 750px){
-	#quote {
+	#inspiration {
 		background-attachment: scroll;
 	}
 }
 
-.quote {
+.inspiration {
   font-size: 2rem;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /*--------------- Skills ---------------*/
