@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".mobile, .mobile-list").click(function (){
+	$(".mobile, .mobile-list li").click(function (){
 		$(".mobile-list").toggle();
 		$(".mobile i").toggleClass("fa-times");
 	});
