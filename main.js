@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 function updateNavbarClass() {
   const targetElement = $('.navigation');
-  if (window.innerWidth < 1168) {
+  if (window.innerWidth < 1281) {
     targetElement.addClass('mobile-list');
   } else {
     targetElement.removeClass('mobile-list');
