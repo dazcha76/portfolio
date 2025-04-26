@@ -368,10 +368,6 @@ nav {
   #skills-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  #connect {
-    background-attachment: fixed;
-  }
 }
 
 @media (max-width: 768px) {
