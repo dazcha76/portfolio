@@ -1,16 +1,17 @@
 * {
-	color: #696969;
-  font-size: 16px;;
-	font-family: 'Comfortaa', cursive;
+  color: #696969;
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
   box-sizing: border-box;
-  line-height: 1.80rem;
+  line-height: 1.8rem;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -18,7 +19,7 @@ html, body {
 }
 
 .font-100 {
-  font-size: 1.00rem;
+  font-size: 1rem;
 }
 
 .font-125 {
@@ -26,7 +27,7 @@ html, body {
 }
 
 .font-150 {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
 }
 
 .font-250 {
@@ -34,27 +35,27 @@ html, body {
 }
 
 .centered-text {
-	text-align: center;;
+  text-align: center;
 }
 
 .blue-text {
-	color: #3598db;
+  color: #3598db;
 }
 
 .blue-divider {
-	width: 15%;
-	border: 3px solid #3598db;
-	margin-bottom: 3rem;
+  width: 15%;
+  border: 3px solid #3598db;
+  margin-bottom: 3rem;
 }
 
 .white-text {
-	color: #FFF;
+  color: #fff;
 }
 
 .white-divider {
-	width: 15%;
-	border: 3px solid #FFF;
-	margin-bottom: 3rem;
+  width: 15%;
+  border: 3px solid #fff;
+  margin-bottom: 3rem;
 }
 
 .display-flex {
@@ -63,48 +64,49 @@ html, body {
 }
 
 .circle {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .border-radius {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
-#skills, #projects {
-	background-color: #f7f7f7;
+#skills,
+#projects {
+  background-color: #f7f7f7;
 }
 
 section {
-	padding: 3rem 15rem;
+  padding: 3rem 15rem;
 }
 
 .section-header {
-	font-size: 2.5rem;
-	text-align: center;
-	text-transform: lowercase;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 .icon-container {
   height: 7rem;
-	width: 7rem;
-	position: relative;
+  width: 7rem;
+  position: relative;
 }
 
 .icon {
-	font-size: 3rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*--------------- Navbar ---------------*/
 
 nav {
-	background-color: #3598db;
-	height: 4.5rem;
-	position: fixed;
-	width: 100%;
+  background-color: #3598db;
+  height: 4.5rem;
+  position: fixed;
+  width: 100%;
   align-items: center;
   z-index: 2;
   box-sizing: border-box;
@@ -123,7 +125,7 @@ nav {
 
 .navigation li:hover,
 .mobile-list li:hover {
-	background-color: white;
+  background-color: white;
   color: #3598db;
 }
 
@@ -132,11 +134,11 @@ nav {
 }
 
 .mobile-list {
-	display: none;
-	position: fixed;
-	top: 3.5em;
-	right: 0;
-	background-color: #3598db;
+  display: none;
+  position: fixed;
+  top: 3.5em;
+  right: 0;
+  background-color: #3598db;
   border-bottom: 5px solid #3598db;
   width: 100%;
 }
@@ -152,29 +154,29 @@ nav {
 /*--------------- Intro ---------------*/
 
 #intro {
-	height: 100vh;
-	background-image: url(images/uyuni3.jpg);
-	background-position: 60% 90%;
-	background-attachment: fixed;
-	background-size: cover;
+  height: 100vh;
+  background-image: url(images/uyuni3.jpg);
+  background-position: 60% 90%;
+  background-attachment: fixed;
+  background-size: cover;
   position: relative;
 }
 
 .logo-container {
   height: 25rem;
   width: 25rem;
-  border: 10px solid #FFF;
+  border: 10px solid #fff;
   position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .letter {
-	font-size: 15rem;
+  font-size: 15rem;
   margin: -35px 0 0;
 }
 
@@ -225,6 +227,8 @@ nav {
 .inspiration {
   font-size: 2rem;
   z-index: 1;
+  line-height: 3rem;
+  font-weight: 900;
 }
 
 .text-shadow {
@@ -234,24 +238,24 @@ nav {
 /*--------------- Skills ---------------*/
 
 #skills-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 .skill-circle {
-	background-color: #3598db;
-	border: 7px solid #f7f7f7;
-	box-shadow: 0 0 0 10px #f7f7f7;
+  background-color: #3598db;
+  border: 7px solid #f7f7f7;
+  box-shadow: 0 0 0 10px #f7f7f7;
 }
 
 .skill-circle:hover {
-	background-color: #ff748c;
-	box-shadow: 0 0 0 10px #ff748c;
+  background-color: #ff748c;
+  box-shadow: 0 0 0 10px #ff748c;
 }
 
 .devicon-angular-plain {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 /*--------------- Experience ---------------*/
@@ -264,6 +268,7 @@ nav {
 
 .description {
   z-index: 1;
+  font-weight: 900;
 }
 
 .technologies {
@@ -315,10 +320,10 @@ nav {
 /*--------------- Connect ---------------*/
 
 #connect {
-	height: 70vh;
-	background-image: url(images/uyuni5.jpg);
-	background-position: 60% 80%;
-	background-size: cover;
+  height: 70vh;
+  background-image: url(images/uyuni5.jpg);
+  background-position: 60% 80%;
+  background-size: cover;
 }
 
 .connect-wrapper {
@@ -328,19 +333,20 @@ nav {
   gap: 70px;
 }
 
-.connect-wrapper a:link, .connect-wrapper a:visited {
-	color: white;
+.connect-wrapper a:link,
+.connect-wrapper a:visited {
+  color: white;
 }
 
 .connect-circle {
-	border: 1px solid #FFF;
+  border: 1px solid #fff;
   .connect-icon {
-    color: #FFF;
+    color: #fff;
   }
 }
 
 .connect-circle:hover {
-	background-color: white;
+  background-color: white;
   .connect-icon {
     color: #3598db;
   }
@@ -372,7 +378,7 @@ nav {
 
 @media (max-width: 768px) {
   .font-100 {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 
   .font-125 {
@@ -405,21 +411,21 @@ nav {
   }
 
   #intro {
-		background-attachment: scroll;
-	}
+    background-attachment: scroll;
+  }
 
   .logo-container {
     height: 20rem;
     width: 20rem;
   }
-  
+
   .letter {
     font-size: 11rem;
   }
 
   #inspiration {
-		background-attachment: scroll;
-	}
+    background-attachment: scroll;
+  }
 
   .inspiration {
     font-size: 1.5rem;

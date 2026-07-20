@@ -1,8 +1,8 @@
-$(document).ready(function(){
-	$(".mobile, .mobile-list li").click(function (){
-		$(".mobile-list").toggle();
-		$(".mobile i").toggleClass("fa-times");
-	});
+$(document).ready(function () {
+  $('.mobile, .mobile-list li').click(function () {
+    $('.mobile-list').toggle();
+    $('.mobile i').toggleClass('fa-times');
+  });
 });
 
 function updateNavbarClass() {
@@ -20,30 +20,34 @@ $(window).on('resize', updateNavbarClass);
 // ---- Skills ----
 
 const skills = [
+  { name: 'Angular', icon: 'devicon-angular-plain' },
+  { name: 'React', icon: 'devicon-react-original' },
+  { name: 'Vue', icon: 'devicon-vuejs-plain' },
+  { name: 'TypeScript', icon: 'devicon-typescript-plain' },
+  { name: 'GraphQL', icon: 'devicon-graphql-plain' },
+
   { name: 'HTML5', icon: 'devicon-html5-plain' },
   { name: 'CSS3', icon: 'devicon-css3-plain' },
   { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-  { name: 'Angular', icon: 'devicon-angular-plain' },
-  { name: 'React', icon: 'devicon-react-original' },
-  { name: 'jQuery', icon: 'devicon-jquery-plain' },
-  { name: 'Ruby', icon: 'devicon-ruby-plain' },
-  { name: 'Rails', icon: 'devicon-rails-plain' },
-  { name: 'Figma', icon: 'devicon-figma-plain' },
+
+  { name: 'Jest', icon: 'devicon-jest-plain' },
+  { name: 'Jasmine', icon: 'devicon-jasmine-original' },
+  { name: 'DataDog', icon: 'devicon-datadog-original' },
   { name: 'Git', icon: 'devicon-git-plain' },
-  { name: 'GitHub', icon: 'devicon-github-plain' },
-  { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' }
 ];
 
 const skillsContainer = $('#skills-container');
 
-skills.forEach(skill => {
+skills.forEach((skill) => {
   const skillDiv = $('<div>', { class: 'skill' });
-  const skillCircle = $('<div>', { class: 'icon-container skill-circle circle' });
+  const skillCircle = $('<div>', {
+    class: 'icon-container skill-circle circle',
+  });
   const icon = $('<i>', { class: `icon white-text ${skill.icon}` });
 
-  const skillName = $('<h3>', { 
+  const skillName = $('<h3>', {
     class: 'centered-text',
-    text: skill.name 
+    text: skill.name,
   });
 
   skillCircle.append(icon);
