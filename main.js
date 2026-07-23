@@ -25,14 +25,12 @@ const skills = [
   { name: 'Vue', icon: 'devicon-vuejs-plain' },
   { name: 'TypeScript', icon: 'devicon-typescript-plain' },
   { name: 'GraphQL', icon: 'devicon-graphql-plain' },
-
   { name: 'HTML5', icon: 'devicon-html5-plain' },
   { name: 'CSS3', icon: 'devicon-css3-plain' },
   { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-
   { name: 'Jest', icon: 'devicon-jest-plain' },
   { name: 'Jasmine', icon: 'devicon-jasmine-original' },
-  { name: 'DataDog', icon: 'devicon-datadog-original' },
+  { name: 'Datadog', icon: 'devicon-datadog-original' },
   { name: 'Git', icon: 'devicon-git-plain' },
 ];
 
